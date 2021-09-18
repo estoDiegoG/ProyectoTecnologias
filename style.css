@@ -1,0 +1,10 @@
+.hola{
+    background-color: rgb(44, 42, 165);
+    text-align: center;
+}
+
+.genial{
+    text-align: center;
+    background-color: orange;
+    border: 2px solid rgb(0, 0, 0);
+}
