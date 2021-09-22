@@ -1,10 +1,22 @@
-.hola{
-    background-color: rgb(44, 42, 165);
+.logo{
     text-align: center;
+}
+
+.menu{
+    background-color: rgb(103, 162, 25);
+}
+
+.contenedor{
+    background-color: rgb(214, 214, 214);
 }
 
 .genial{
     text-align: center;
     background-color: orange;
     border: 2px solid rgb(0, 0, 0);
+}
+
+.pie{
+    background-color: rgb(103, 162, 25);
+    text-align: center;
 }

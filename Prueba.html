@@ -8,23 +8,73 @@
     <title>Lml Solutions</title>
 </head>
 <body>
-    <div class="hola">
-        Hola
+    <!--Se agrega el logo de la empresa-->
+    <div class="logo">
+        <img style="text-align: left;" src="Imagenes/Logo lml Solutions con color.png" width="100"/>
+    </div>
+
+    <div class="menu">
+        <!--Se crea una tabla para el menu-->
+        <table style="text-align: right;">
+            <tr>
+                <th>Inicio</th>
+                <th>Cotización</th>
+                <th>Nuestros Servicios</th>
+                <th>Extensiones</th>
+                <th>Contactanos</th>
+            </tr>
+        </table>
     </div>
 
     <div class="contenedor">
-        Nuevo contenedor
+        <h1 style="color: rgb(103, 162, 25); text-align: center;">
+            Contactanos
+        </h1>
+        <font face="Comic Sans MS,arial,verdana">
+            <p style="text-align: center;">
+                ¿Eres un cliente activo?<br>Contactate con nosotros<br>para saber mas
+            </p>
+        </font>
+        <br><br>
+        <!--Aqui se hace todo el formulario apra que el usuario lo llene-->
+        <form action="/formulario" method="POST">
+            <div style="text-align: center;">
+                <input type="text" name="nombre" placeholder="Nombre"/><br><br>
+                <input type="text" name="Apellido" placeholder="Apellido"/><br><br>
+                <input type="text" name="ciudad" placeholder="Ciudad"/><br><br>
+                <input type="text" name="telefono" placeholder="Teléfono"/><br><br>
+                <input type="text" name="celular" placeholder="Celular"/><br><br>
+                <textarea name="comentario" rows="10" cols="60" placeholder="Escribe aquí tu mensaje"></textarea><br><br>
+            </div>
+            <p style="text-align: center;">
+                <input type="checkbox" name="palomita"/>
+                Acepto los <a style="color: blue;" target="_blank" href="https://www.wattpad.com/story/272126320-the-dark-demon-hunter">Términos y condiciones</a><br><br>
+                <button style="border: 1px solid rgb(103, 162, 25); background-color: rgb(103, 162, 25);" type="submit">
+                    <font size=5 face="Comic Sans MS,arial,verdana" color=white>
+                        Enviar formulario
+                    </font>
+                </button>
+                <button style="border: 1px solid rgb(103, 162, 25); background-color: rgb(103, 162, 25);" type="reset">
+                    <font size=5 face="Comic Sans MS,arial,verdana" color=white>
+                        Reiniciar
+                    </font>
+                </button>
+            </p>
+        </form>
+        <br>
     </div>
 
-    <div class="nuevo">
-        prueba numero 4
+    <div class="pie">
+        <i>
+            <p>
+                Políticas de privacidad | © Copyright2021 | Todos los derechos reservados<br>
+                |Desarrollado por Cristhian y Tomas
+            </p>
+        </i>
+        <h3>Contactanos</h3>
+        <a target="_blank" href="https://www.facebook.com/lmlsolution/?ref=page_internal"><img src="Imagenes/Logo Facebook.png" width="25"/></a>
+        <a target="_blank" href="http://www.lostejos.com"><img src="Imagenes/Logo whatsapp.png" width="25"/></a>
+        <a target="_blank" href="mailto:lmlsolutions01@gmail.com"><img src="Imagenes/Logo Gmail.png" width="35" height="25"/></a>
     </div>
-    <div class="genial">
-        <h1>Lee mis historias en los siguientes links</h1>
-        <p>Lee mis historias<br><a href="https://www.wattpad.com/story/261411009-izuku-ghost-rider-vengador-fantasma">Izuku Ghost Rider (Vengador Fantasma)</a></br> 
-        <a href="https://www.wattpad.com/story/272126320-the-dark-demon-hunter">The Dark Demon Hunter</a></p>
-        <i><p>By: Efecius Fanfic</p></i>
-    </div>
-    <div></div>
 </body>
 </html>
