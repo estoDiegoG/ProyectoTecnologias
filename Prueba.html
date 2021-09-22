@@ -4,18 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <title>Lml Solutions</title>
 </head>
 <body>
-    <div class="hola">
-        Hola
+    <header>
+    <!--Se agrega el logo de la empresa-->
+    <div class="logo">
+        <img style="text-align: left;" src="logo/Logo lml Solutions con color.png" width="100"/>
     </div>
-    <div class="contenedor">
-        Nuevo contenedorr
+    </header>
+    <header>
+        <nav class="navegacion">
+              <ul class="menu">
+                <li><a href="#"> Inicio</a></li>
+                <li><a href="#">Cotización</a></li>
+                <li><a href="#">Nuestros Servicios</a></li>
+                <li><a href="#">Extensiones</a></li>
+                <li><a href="#">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
     
+        <!--Se crea una tabla para el menu-->
+          
+
+    <div class="contenedor">
+        <h1 class="tcontactanos">
+            Contactanos
+        </h1>
+        <font face="Comic Sans MS,arial,verdana">
+            <p style="text-align: center;">
+                ¿Eres un cliente activo?<br>Contactate con nosotros<br>para saber mas
+            </p>
+        </font>
+        <br><br>
+        <!--Aqui se hace todo el formulario apra que el usuario lo llene-->
+        <form action="/formulario" method="POST">
+            <div style="text-align: center;">
+                <input type="text" name="nombre" placeholder="Nombre"/><br><br>
+                <input type="text" name="Apellido" placeholder="Apellido"/><br><br>
+                <input type="text" name="ciudad" placeholder="Ciudad"/><br><br>
+                <input type="text" name="telefono" placeholder="Teléfono"/><br><br>
+                <input type="text" name="celular" placeholder="Celular"/><br><br>
+                <textarea name="comentario" rows="10" cols="60" placeholder="Escribe aquí tu mensaje"></textarea><br><br>
+            </div>
+            <p style="text-align: center;">
+                <input type="checkbox" name="palomita"/>
+                Acepto los <a style="color: blue;" target="_blank" href="https://www.wattpad.com/story/272126320-the-dark-demon-hunter">Términos y condiciones</a><br><br>
+                <button style="border: 1px solid rgb(103, 162, 25); background-color: rgb(103, 162, 25);" type="submit">
+                    <font size=5 face="Comic Sans MS,arial,verdana" color=white>
+                        Enviar formulario
+                    </font>
+                </button>
+                <button style="border: 1px solid rgb(103, 162, 25); background-color: rgb(103, 162, 25);" type="reset">
+                    <font size=5 face="Comic Sans MS,arial,verdana" color=white>
+                        Reiniciar
+                    </font>
+                </button>
+            </p>
+        </form>
+        <br>
     </div>
-    <div class="nuevo">
-        prueba numnero 4
+
+    <div class="pie">
+        <i>
+            <p>
+                Políticas de privacidad | © Copyright2021 | Todos los derechos reservados<br>
+                |Desarrollado por Cristhian y Tomas
+            </p>
+        </i>
+        <h3>Contactanos</h3>
+        <a target="_blank" href="https://www.facebook.com/lmlsolution/?ref=page_internal"><img src="Imagenes/Logo Facebook.png" width="25"/></a>
+        <a target="_blank" href="http://www.lostejos.com"><img src="Imagenes/Logo whatsapp.png" width="25"/></a>
+        <a target="_blank" href="mailto:lmlsolutions01@gmail.com"><img src="Imagenes/Logo Gmail.png" width="35" height="25"/></a>
     </div>
 </body>
 </html>
