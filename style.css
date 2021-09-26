@@ -1,35 +1,52 @@
+*{
+ 
+}
 body{
     font-family: 'Roboto Condensed', sans-serif;
+    background-color: #f2f2f2;
+}
+header{
+    width: 100%;
+    background-color:rgb(103, 162, 25);
+    height: 70px;
+   
 }
 .logo{
-    text-align: left;
-    width: 100px;
+    width: 8%;
+    background-color: rgb(214, 214, 214);
+    float: left;
+    height: 70px;
+    box-sizing: border-box;
+}
+img{
+   display: inline-block;
+   width: 60px;
+   height: 60px;
+   padding-top: 5px;
+   padding-left: 10px;
 }
 .navegacion{
-    width: 1300px;
-    margin: 30px auto;
-    background-color: rgb(103, 162, 25);
-    position: relative;
-    bottom: 150px ;
-    left: 100px;
+    width: 92%;
+    height: 70px;   
+    float: left;
+    box-sizing:border-box;
 }
 .navegacion ul{
     list-style: none;
+    padding-top: 15px;
 }
 .menu > li{
-    display: inline-block;
+    display: inline;
 }
 .menu > li > a{
+    text-align: center;
     text-decoration: none;
-    display: block;
-    padding: 50px 80px;
-    font-size:large;
-    color: #f2f2f2;
-
-
-
+    text-transform: uppercase;
+    padding: 30px 40px;
+    letter-spacing: 1px;
+    color:rgb(214, 214, 214);
+    
 }
-
 .tcontactanos{
     color:rgb(103, 162, 25);
     text-align: center;
@@ -37,6 +54,12 @@ body{
 
 .contenedor{
     background-color: rgb(214, 214, 214);
+    border-radius: 50px;
+    background: #f2f2f2;
+box-shadow:  20px 20px 60px #b3b3b3,
+             -20px -20px 60px #ffffff;
+             margin-right: 5rem;
+             margin-left: 5rem;
 
 }
 
@@ -45,8 +68,31 @@ body{
     background-color: orange;
     border: 2px solid rgb(0, 0, 0);
 }
+input{
+    width: 15rem;
+    padding: 1rem;
+    border-radius: 25px;
+    background: #f2f2f2;
+    box-shadow: inset 6px 6px 12px #d7d7d7,
+                inset -6px -6px 12px #ffffff;
+            border-style: none;
+}
 
-.pie{
+footer{
+    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     background-color: rgb(103, 162, 25);
     text-align: center;
+}
+.prueba{
+    background-color: red;
+}
+.contenedor>div>form>p>button{
+    font-size: medium;
+    font-family: fantasy;
+    background-color: rgb(103, 162, 25);
+}
+#imgLogo{
+    vertical-align:middle;
 }
