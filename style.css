@@ -18,7 +18,7 @@ header{
     height: 70px;
     box-sizing: border-box;
 }
-img{
+.logo>img{
    display: inline-block;
    width: 60px;
    height: 60px;
@@ -39,10 +39,11 @@ img{
     display: inline;
 }
 .menu > li > a{
+    float: left;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 30px 40px;
+    padding: 0px 40px;
     letter-spacing: 1px;
     color:rgb(214, 214, 214);
     
@@ -95,4 +96,8 @@ footer{
 }
 #imgLogo{
     vertical-align:middle;
+}
+.montaje>p>img{
+    width: 1180px;
+    height: 600px;   
 }
