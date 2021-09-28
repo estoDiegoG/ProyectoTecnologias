@@ -5,36 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <title>Lml Solutions</title>
 </head>
-<body>
-    <!--Se agrega el logo de la empresa-->
-    <div class="logo">
-        <img style="text-align: left;" src="Imagenes/Logo lml Solutions con color.png" width="100"/>
-    </div>
+<body class="grid-container">
+    <header>
+        <div class=ancho>
+                <div class=logo>
+                    <img src="logo/Logo lml Solutions con color.png"/> 
+                </div>
+            <nav class="navegacion">
+                <ul class="menu">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Cotización</a></li>
+                    <li><a href="#">Nuestros Servicios</a></li>
+                    <li><a href="#">Extensiones</a></li>
+                    <li><a href="#">Contactanos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <div class="menu">
+    <div class="prueba">
+    </div>
         <!--Se crea una tabla para el menu-->
-        <table style="text-align: right;">
-            <tr>
-                <th>Inicio</th>
-                <th>Cotización</th>
-                <th>Nuestros Servicios</th>
-                <th>Extensiones</th>
-                <th>Contactanos</th>
-            </tr>
-        </table>
-    </div>
-
+          
     <div class="contenedor">
-        <h1 style="color: rgb(103, 162, 25); text-align: center;">
+        <h1 class="tcontactanos">
             Contactanos
         </h1>
-        <font face="Comic Sans MS,arial,verdana">
             <p style="text-align: center;">
                 ¿Eres un cliente activo?<br>Contactate con nosotros<br>para saber mas
             </p>
-        </font>
         <br><br>
         <!--Aqui se hace todo el formulario apra que el usuario lo llene-->
         <form action="/formulario" method="POST">
@@ -64,7 +68,7 @@
         <br>
     </div>
 
-    <div class="pie">
+    <footer>
         <i>
             <p>
                 Políticas de privacidad | © Copyright2021 | Todos los derechos reservados<br>
@@ -72,9 +76,10 @@
             </p>
         </i>
         <h3>Contactanos</h3>
+        <i class="fab fa-facebook"></i>
         <a target="_blank" href="https://www.facebook.com/lmlsolution/?ref=page_internal"><img src="Imagenes/Logo Facebook.png" width="25"/></a>
         <a target="_blank" href="http://www.lostejos.com"><img src="Imagenes/Logo whatsapp.png" width="25"/></a>
         <a target="_blank" href="mailto:lmlsolutions01@gmail.com"><img src="Imagenes/Logo Gmail.png" width="35" height="25"/></a>
-    </div>
+    </footer>
 </body>
 </html>
