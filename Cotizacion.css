@@ -49,54 +49,90 @@
     text-align: center;
 }
 
-.tcontactanos{
-    color:rgb(103, 162, 25);
+.image{
     text-align: center;
 }
 
-.men{
-    text-align: center;
+.image img{
+    margin-top: 20px;
+    width: 200px;
 }
 
 .completar{
     margin-top: 12px;
-    text-align: center;
     border-radius: 0px;
     background: #f2f2f2;
     box-shadow: inset 12px 12px 95px #616161,
             inset -12px -12px 95px #ffffff;
 }
 
-.formul input{
-    border-radius: 5px;
-    background: #f2f2f2;
-    box-shadow: inset -14px -14px 23px #e3e3e3,
-            inset 14px 14px 23px #ffffff;
-            border-style: none;
+.infor1{
+    display: flex;
+    margin-left: 30px;
 }
 
-.formul textarea{
-    border-radius: 5px;
-    background: #f2f2f2;
-    box-shadow: inset -14px -14px 23px #e3e3e3,
-            inset 14px 14px 23px #ffffff;
-            border-style: none;
+.infor1 label{
+    font-family: cursive;
+    margin-left: 10px;
 }
 
-.formul2{
+.infor1 img{
+    width: 25px;
+    height: 25px;
+}
+
+.infor input{
+    margin-left: 30px;
+    border: 2px solid #5a9aae;
+    border-radius: 6px;
+    background: #f2f2f2;
+    box-shadow: inset 5px 5px 10px #cecece,
+            inset -5px -5px 10px #ffffff;
+    width: 500px;
+    height: 30px;
+}
+
+.boton{
     text-align: center;
 }
 
-.formul2 a{
-    color: blue;
-    list-style: none;
+.boton font{
+    color: #c7c7c7;
+    font-size: 40px;
+    font-family: cursive;
 }
 
-button{
+.boton button{
+    text-align: center;
+    border: 2px solid #67a219;
     border-radius: 0px;
-    background: #0B8C8C;
-    box-shadow: inset 14px 14px 28px #096b6b,
-            inset -14px -14px 28px #0fadad;
+    background: #67a219;
+    box-shadow: inset 14px 14px 28px #507e14,
+            inset -14px -14px 28px #7ec61f;
+}
+
+.generador p{
+    text-align: center;
+    font-family: cursive;
+    font-size: 40px;
+    color: #67a219;
+}
+
+.coti1 input{
+    margin-left: 450px;
+    width: 250px;
+    height: 50px;
+    border: 2px solid #5a9aae;
+    border-radius: 6px;
+    background: #f2f2f2;
+    box-shadow: inset 5px 5px 10px #cecece,
+            inset -5px -5px 10px #ffffff;
+}
+
+.coti1 label{
+    text-align: center;
+    margin-left: 30px;
+    font-family: cursive;
 }
 
 /*Aquí inicia todo el footer de la pagina web*/
@@ -243,6 +279,7 @@ footer{
     max-width: 1600px;
     margin: auto;
     width: 100%;
+    border-radius: 0px;
     border-radius: 0px;
     background: #487114;
     box-shadow: inset 20px 20px 40px #304b0d,

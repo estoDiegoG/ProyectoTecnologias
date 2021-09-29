@@ -49,54 +49,42 @@
     text-align: center;
 }
 
-.tcontactanos{
-    color:rgb(103, 162, 25);
+.image{
     text-align: center;
 }
 
-.men{
-    text-align: center;
+.image img{
+    margin-top: 20px;
+    width: 200px;
 }
 
-.completar{
+.fondo{
     margin-top: 12px;
-    text-align: center;
     border-radius: 0px;
     background: #f2f2f2;
     box-shadow: inset 12px 12px 95px #616161,
             inset -12px -12px 95px #ffffff;
 }
 
-.formul input{
-    border-radius: 5px;
-    background: #f2f2f2;
-    box-shadow: inset -14px -14px 23px #e3e3e3,
-            inset 14px 14px 23px #ffffff;
-            border-style: none;
+.fondo p{
+    text-align: center;
+    color: #67a219;
+    font-family: cursive;
+    font-size: 40px;
 }
 
-.formul textarea{
-    border-radius: 5px;
-    background: #f2f2f2;
-    box-shadow: inset -14px -14px 23px #e3e3e3,
-            inset 14px 14px 23px #ffffff;
-            border-style: none;
-}
-
-.formul2{
+.images1{
     text-align: center;
 }
 
-.formul2 a{
-    color: blue;
-    list-style: none;
+.images1 img{
+    width: 350px;
 }
 
-button{
-    border-radius: 0px;
-    background: #0B8C8C;
-    box-shadow: inset 14px 14px 28px #096b6b,
-            inset -14px -14px 28px #0fadad;
+.images1 p{
+    color: #1b1b1b;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
 }
 
 /*Aquí inicia todo el footer de la pagina web*/
@@ -243,6 +231,7 @@ footer{
     max-width: 1600px;
     margin: auto;
     width: 100%;
+    border-radius: 0px;
     border-radius: 0px;
     background: #487114;
     box-shadow: inset 20px 20px 40px #304b0d,

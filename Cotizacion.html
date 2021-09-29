@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Contactanos.css" type="text/css">
+    <link rel="stylesheet" href="Cotizacion.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <title>Lml Solutions</title>
 </head>
-<body>
+<body class="grid-container">
     <header>
         <img src="Imagenes/Logo lml Solutions con color.png" class="logo"/>
         <nav class="navegacion">
@@ -22,39 +25,110 @@
     </header><br><br><br>
           
     <div class="completar">
-        <h1 class="tcontactanos">
-            Contactanos
-        </h1>
-        <p class="men">
-                ¿Eres un cliente activo?<br>Contactate con nosotros<br>para saber mas
-        </p>
-        <br><br>
-        <!--Aqui se hace todo el formulario apra que el usuario lo llene-->     
-        <form action="/formulario" method="POST">
-            <div class="formul">
-                <input type="text" name="nombre" placeholder="Nombre"/><br><br>
-                <input type="text" name="Apellido" placeholder="Apellido"/><br><br>
-                <input type="text" name="ciudad" placeholder="Ciudad"/><br><br>
-                <input type="text" name="telefono" placeholder="Teléfono"/><br><br>
-                <input type="text" name="celular" placeholder="Celular"/><br><br>
-                <textarea name="comentario" rows="10" cols="60" placeholder="Escribe aquí tu mensaje"></textarea><br><br>
-            </div>
-            <div class="formul2">               
-                <input type="checkbox" name="palomita"/>
-                    Acepto los <a target="_blank" href="https://www.wattpad.com/story/272126320-the-dark-demon-hunter">Términos y condiciones</a><br><br>
+        <div class="image">
+            <img src="Imagenes/LOGO LML-HSE.png">
+        </div><br><br><br><br>
+
+        <form action="Cotizacion" method="POST">
+            <div class="infor">
+                <div class="infor1">
+                    <img src="Imagenes/Flecha.png">
+                    <label>
+                    Escribe aquí tu numero de contacto
+                    </label>
+                </div><br>
+                <input type="text" name="Numero"/><br><br>
+    
+                <div class="infor1">
+                    <img src="Imagenes/Flecha.png">
+                    <label>
+                    ¿Cómo se llama su empresa?
+                    </label>
+                </div><br>
+                <input type="text" name="Nombre empresa"/><br><br>
+    
+                <div class="infor1">
+                    <img src="Imagenes/Flecha.png">
+                    <label>
+                    ¿Cuántos trabajadores posee su empresa?
+                    </label>
+                </div><br>
+                <input type="text" name="Numero de trabajadores"/><br><br>
+    
+                <div class="infor1">
+                    <img src="Imagenes/Flecha.png">
+                    <label>
+                    ¿Cuántos metros cuadrados tiene su establecimiento?
+                    </label>
+                </div><br>
+                <input type="text" name="metros cuadrados"/><br><br>
+    
+                <div class="infor1">
+                    <img src="Imagenes/Flecha.png">
+                    <label>
+                    ¿Qué tipo de actividades realiza su empresa?
+                    </label>
+                </div><br>
+                <input type="text" name="Actividades"/><br><br>
+    
+                <div class="infor1">
+                    <img src="Imagenes/Flecha.png">
+                    <label>
+                    ¿Dónde se encuentra ubicada su empresa? (Sede principal)
+                    </label>
+                </div><br>
+                <input type="text" name="Ubicacion"/><br><br>
+    
+                <div class="infor1">
+                    <img src="Imagenes/Flecha.png">
+                    <label>
+                    ¿Cuantas sedes tiene su empresa?
+                    </label>
+                </div><br>
+                <input type="text" name="Sedes"/><br><br>
+            </div><br><br>
+
+            <div class="boton">
                 <button type="submit">
-                    <font size=5 face="Comic Sans MS,arial,verdana" color=white>
-                         Enviar formulario
+                    <font size=5>
+                         Generar
                     </font>
                 </button>
-                <button type="reset">
-                    <font size=5 face="Comic Sans MS,arial,verdana" color=white>
-                        Reiniciar
-                    </font>
-                </button>
+            </div><br>
+
+            <div class="generador">
+                <p>
+                    Plan de cotización
+                </p><br><br>
+
+                <div class="coti-imput">
+                    <div class="coti1">
+                        <input type="text" name="Numero"/>
+                        <label>
+                            Anual
+                        </label>
+                    </div><br><br>
+                    <div class="coti1">
+                        <input type="text" name="Numero"/>
+                        <label>
+                            Semestral
+                        </label>
+                    </div><br><br>
+                    <div class="coti1">
+                        <input type="text" name="Numero"/>
+                        <label>
+                            Trimestral
+                        </label>
+                    </div><br><br>
+                    <div class="coti1">
+                        <input type="text" name="Numero"/>
+                        <label>
+                            Mensual
+                        </label>
+                    </div><br><br>
+                </div>
             </div>
         </form>
-        <br>
     </div>
 
     <!--Se crea el footer que ir en cada una de las pestañas de la pagina-->
@@ -126,8 +200,8 @@
 
         <div class="container-footer">
             <div class="copyright">
-                    Políticas de privacidad | ©2021 Copyright | Todos los derechos reservados<br>
-                    Desarrollado por Cristhian y Tomas
+                Políticas de privacidad | ©2021 Copyright | Todos los derechos reservados<br>
+                Desarrollado por Cristhian y Tomas
             </div>
             <div class="information">
                 <a href="#">
