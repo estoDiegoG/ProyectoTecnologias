@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="Contactanos.css" type="text/css">
     <title>Lml Solutions</title>
 </head>
-<body>
-    <header>
-        <img src="Imagenes/Logo lml Solutions con color.png" class="logo"/>
-        <nav class="navegacion">
-            <ul class="menu">
+<body class="container">
+    <div class="logo">
+        <img src="Imagenes/Logo lml Solutions con color.png"/>
+    </div>
+    <div class="menu">
+        <nav>
+            <ul>
                 <li><a href="#"><b>Inicio</b></a></li>
                 <li><a href="#"><b>Cotización</b></a></li>
                 <li><a href="#"><b>Nuestros Servicios</b></a></li>
@@ -19,9 +21,9 @@
                 <li><a href="#"><b>Contactanos</b></a></li>
             </ul>
         </nav>
-    </header><br><br><br>
+    </div><br><br><br>
           
-    <div class="completar">
+    <div class="nav">
         <h1 class="tcontactanos">
             Contactanos
         </h1>
@@ -30,13 +32,13 @@
         </p>
         <br><br>
         <!--Aqui se hace todo el formulario apra que el usuario lo llene-->     
-        <form action="/formulario" method="POST">
+        <form action="mailto: lmlsolutions01@gmail.com">
             <div class="formul">
-                <input type="text" name="nombre" placeholder="Nombre"/><br><br>
-                <input type="text" name="Apellido" placeholder="Apellido"/><br><br>
-                <input type="text" name="ciudad" placeholder="Ciudad"/><br><br>
-                <input type="text" name="telefono" placeholder="Teléfono"/><br><br>
-                <input type="text" name="celular" placeholder="Celular"/><br><br>
+                <input type="text" name="nombre" placeholder="Nombre"/><br><br><br>
+                <input type="text" name="Apellido" placeholder="Apellido"/><br><br><br>
+                <input type="text" name="ciudad" placeholder="Ciudad"/><br><br><br>
+                <input type="text" name="telefono" placeholder="Teléfono"/><br><br><br>
+                <input type="text" name="celular" placeholder="Celular"/><br><br><br>
                 <textarea name="comentario" rows="10" cols="60" placeholder="Escribe aquí tu mensaje"></textarea><br><br>
             </div>
             <div class="formul2">               
@@ -44,7 +46,7 @@
                     Acepto los <a target="_blank" href="https://www.wattpad.com/story/272126320-the-dark-demon-hunter">Términos y condiciones</a><br><br>
                 <button type="submit">
                     <font size=5 face="Comic Sans MS,arial,verdana" color=white>
-                         Enviar formulario
+                         Enviar
                     </font>
                 </button>
                 <button type="reset">
