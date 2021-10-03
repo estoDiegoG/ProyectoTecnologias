@@ -5,44 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="Contactanos.css" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <title>Lml Solutions</title>
 </head>
 <body>
     <header>
-        <div class=ancho>
-                <div class=logo>
-                    <img src="logo/Logo lml Solutions con color.png" id="imgLogo"/> 
-                </div>
-            <nav class="navegacion">
-                <ul class="menu">
-                    <li><a href="#"> Inicio</a></li>
-                    <li><a href="#">Cotización</a></li>
-                    <li><a href="#">Nuestros Servicios</a></li>
-                    <li><a href="#">Extensiones</a></li>
-                    <li><a href="#">Contactanos</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <div class="prueba">
-    </div>
-        <!--Se crea una tabla para el menu-->
+        <img src="logo/Logo lml Solutions con color.png" class="logo"/>
+        <nav class="navegacion">
+            <ul class="menu">
+                <li><a href="#"><b>Inicio</b></a></li>
+                <li><a href="#"><b>Cotización</b></a></li>
+                <li><a href="#"><b>Nuestros Servicios</b></a></li>
+                <li><a href="#"><b>Extensiones</b></a></li>
+                <li><a href="#"><b>Contactanos</b></a></li>
+            </ul>
+        </nav>
+    </header><br><br><br>
           
-    <div class="contenedor">
+    <div class="completar">
         <h1 class="tcontactanos">
             Contactanos
         </h1>
-            <p style="text-align: center;">
+        <p class="men">
                 ¿Eres un cliente activo?<br>Contactate con nosotros<br>para saber mas
-            </p>
+        </p>
         <br><br>
-        <!--Aqui se hace todo el formulario apra que el usuario lo llene-->
+        <!--Aqui se hace todo el formulario apra que el usuario lo llene-->     
         <form action="/formulario" method="POST">
-            <div style="text-align: center;">
+            <div class="formul">
                 <input type="text" name="nombre" placeholder="Nombre"/><br><br>
                 <input type="text" name="Apellido" placeholder="Apellido"/><br><br>
                 <input type="text" name="ciudad" placeholder="Ciudad"/><br><br>
@@ -50,36 +42,118 @@
                 <input type="text" name="celular" placeholder="Celular"/><br><br>
                 <textarea name="comentario" rows="10" cols="60" placeholder="Escribe aquí tu mensaje"></textarea><br><br>
             </div>
-            <p style="text-align: center;">
+            <div class="formul2">               
                 <input type="checkbox" name="palomita"/>
-                Acepto los <a style="color: blue;" target="_blank" href="https://www.wattpad.com/story/272126320-the-dark-demon-hunter">Términos y condiciones</a><br><br>
-                <button style="border: 1px solid rgb(103, 162, 25); background-color: rgb(103, 162, 25);" type="submit">
+                    Acepto los <a target="_blank" href="https://www.wattpad.com/story/272126320-the-dark-demon-hunter">Términos y condiciones</a><br><br>
+                <button type="submit">
                     <font size=5 face="Comic Sans MS,arial,verdana" color=white>
-                        Enviar formulario
+                         Enviar formulario
                     </font>
                 </button>
-                <button style="border: 1px solid rgb(103, 162, 25); background-color: rgb(103, 162, 25);" type="reset">
+                <button type="reset">
                     <font size=5 face="Comic Sans MS,arial,verdana" color=white>
                         Reiniciar
                     </font>
                 </button>
-            </p>
+            </div>
         </form>
         <br>
     </div>
 
+    <!--Se crea el footer que ir en cada una de las pestañas de la pagina-->
     <footer>
-        <i>
-            <p>
-                Políticas de privacidad | © Copyright2021 | Todos los derechos reservados<br>
-                |Desarrollado por Cristhian y Tomas
-            </p>
-        </i>
-        <h3>Contactanos</h3>
-        <i class="fab fa-facebook"></i>
-        <a target="_blank" href="https://www.facebook.com/lmlsolution/?ref=page_internal"><img src="Imagenes/Logo Facebook.png" width="25"/></a>
-        <a target="_blank" href="http://www.lostejos.com"><img src="Imagenes/Logo whatsapp.png" width="25"/></a>
-        <a target="_blank" href="mailto:lmlsolutions01@gmail.com"><img src="Imagenes/Logo Gmail.png" width="35" height="25"/></a>
+        <div class="container-footer-all">
+            <div class="container-body">
+            <!--Se crea la primera columna donde irá información adicional de la empresa-->
+                <div class="colum1">
+                <h1>
+                    Más información de la compañia
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>
+                    Aperiam iusto quae illo aspernatur eum reprehenderit adipisci<br>
+                    eius sequi porro quidem molestias vel maiores sapiente, odit nesciunt<br>
+                    fuga sit eligendi accusantium!
+                </p>
+                </div>
+
+            <!--Aquí se agrega la información de las redes sociales que maneja la empresa-->
+                <div class="colum2">
+                <h1>
+                    Redes Sociales
+                </h1>
+                <div class="fila">
+                    <a target="_blank" href="https://www.facebook.com/lmlsolution/?ref=page_internal">
+                        <img src="logo/Logo Facebook.png"/>
+                    </a>
+                    <label for="">
+                        Siguenos en Facebook
+                    </label>
+                </div>
+                <div class="fila">
+                    <a target="_blank" href="mailto:lmlsolutions01@gmail.com">
+                        <img src="logo/Logo Gmail.png" width="35" height="25"/>
+                    </a>
+                    <label>
+                        Mandanos un correo
+                    </label>
+                </div>
+                </div>
+
+            <!--Aquí se agrega la información extra de contacto de la empresa-->
+                <div class="colum3">
+                <h1>
+                    Información de contacto
+                </h1>
+                <div class="fila2">
+                    <img src="logo/casa.png">
+                    <label>
+                        Funza Cundinamarca, Mirador de Celta, Calle 7 #7-39
+                    </label>
+                </div>
+                <div class="fila2">
+                    <img src="logo/celular.png">
+                    <label>
+                        +57 316 6182982
+                    </label>
+                </div>
+                <div class="fila2">
+                    <img src="logo/correo.png">
+                    <label>
+                        lmlsolutions01@gmail.com
+                    </label>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-footer">
+            <div class="copyright">
+                    Políticas de privacidad | ©2021 Copyright | Todos los derechos reservados<br>
+                    |Desarrollado por Cristhian y Tomas
+            </div>
+            <div class="information">
+                    <a href="#">
+                        Inicio
+                    </a>
+                     | 
+                    <a href="#">
+                        Cotización
+                    </a>
+                     | 
+                    <a href="#">
+                        Nuestros servicios
+                    </a>
+                     | 
+                    <a href="#">
+                        Extensiones
+                    </a>
+                     | 
+                    <a href="#">
+                        Contactenos
+                    </a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
