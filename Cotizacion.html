@@ -28,10 +28,13 @@
           
     <div class="nav">
         <div class="image">
+            <h1>
+                Plan de cotización
+            </h1><br>
             <img src="Imagenes/LOGO LML-HSE.png">
-        </div><br><br><br><br>
+        </div>
 
-        <form action="Cotizacion" method="POST">
+        <form action="mailto: lmlsolutions01@gmail.com" method="POST">
             <div class="infor">
                 <div class="infor1">
                     <img src="Imagenes/Flecha.png">
@@ -39,7 +42,7 @@
                     Escribe aquí tu numero de contacto
                     </label>
                 </div><br>
-                <input type="text" name="Numero"/><br><br>
+                <input type="tel" name="Numero" pattern="[0-9]" min="10" max="20" required autofocus onkeypress="return (event.charCode >= 48 && event.charCode <= 57)"/><br><br>
     
                 <div class="infor1">
                     <img src="Imagenes/Flecha.png">
@@ -47,7 +50,7 @@
                     ¿Cómo se llama su empresa?
                     </label>
                 </div><br>
-                <input type="text" name="Nombre empresa"/><br><br>
+                <input type="text" name="Nombre empresa" pattern="[a-zA-Z]" required onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"/><br><br>
     
                 <div class="infor1">
                     <img src="Imagenes/Flecha.png">
@@ -55,7 +58,7 @@
                     ¿Cuántos trabajadores posee su empresa?
                     </label>
                 </div><br>
-                <input type="text" name="Numero de trabajadores"/><br><br>
+                <input type="number" name="Numero de trabajadores" min="1" required/><br><br>
     
                 <div class="infor1">
                     <img src="Imagenes/Flecha.png">
@@ -63,7 +66,7 @@
                     ¿Cuántos metros cuadrados tiene su establecimiento?
                     </label>
                 </div><br>
-                <input type="text" name="metros cuadrados"/><br><br>
+                <input type="number" name="metros cuadrados" min="1" required/><br><br>
     
                 <div class="infor1">
                     <img src="Imagenes/Flecha.png">
@@ -71,7 +74,19 @@
                     ¿Qué tipo de actividades realiza su empresa?
                     </label>
                 </div><br>
-                <input type="text" name="Actividades"/><br><br>
+                <input type="text" name="Actividades" required onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"/><br><br>
+                
+                <div class="infor1">
+                    <img src="Imagenes/Flecha.png">
+                    <label>
+                    ¿Su empresa realiza actividades de alto riesgo?
+                    </label>
+                </div><br>
+                <input type="text" name="Riesgo" list="Riesgo" required/><br><br>
+                <datalist id="Riesgo">
+                    <option>Si</option>
+                    <option>No</option>
+                </datalist>
     
                 <div class="infor1">
                     <img src="Imagenes/Flecha.png">
@@ -79,7 +94,20 @@
                     ¿Dónde se encuentra ubicada su empresa? (Sede principal)
                     </label>
                 </div><br>
-                <input type="text" name="Ubicacion"/><br><br>
+                <input type="text" name="Ubicacion" list="Ubicacion" required/><br><br>
+                <datalist id="Ubicacion">
+                    <option>Bogotá</option>
+                    <option>Medellín</option>
+                    <option>Cali</option>
+                    <option>Barranquilla</option>
+                    <option>Cartagena de indias</option>
+                    <option>Soacha</option>
+                    <option>Cúcuta</option>
+                    <option>Soledad</option>
+                    <option>Bucaramanga</option>
+                    <option>Bello</option>
+                    <option>Otro...</option>
+                </datalist>
     
                 <div class="infor1">
                     <img src="Imagenes/Flecha.png">
@@ -87,7 +115,7 @@
                     ¿Cuantas sedes tiene su empresa?
                     </label>
                 </div><br>
-                <input type="text" name="Sedes"/><br><br>
+                <input type="number" name="Sedes" min="0" required/><br><br>
             </div><br><br>
 
             <div class="boton">
@@ -99,31 +127,31 @@
             </div><br>
 
             <div class="generador">
-                <p>
+                <h2>
                     Plan de cotización
-                </p><br><br>
+                </h2><br><br>
 
                 <div class="coti-imput">
                     <div class="coti1">
-                        <input type="text" name="Numero"/>
+                        <input type="text" name="Numero" readonly/>
                         <label>
                             Anual
                         </label>
                     </div><br><br>
                     <div class="coti1">
-                        <input type="text" name="Numero"/>
+                        <input type="text" name="Numero" readonly/>
                         <label>
                             Semestral
                         </label>
                     </div><br><br>
                     <div class="coti1">
-                        <input type="text" name="Numero"/>
+                        <input type="text" name="Numero" readonly/>
                         <label>
                             Trimestral
                         </label>
                     </div><br><br>
                     <div class="coti1">
-                        <input type="text" name="Numero"/>
+                        <input type="text" name="Numero" readonly/>
                         <label>
                             Mensual
                         </label>

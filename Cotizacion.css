@@ -15,7 +15,12 @@
                         "footer footer footer"
                         "container-footer container-footer container-footer";
     grid-template-columns: 7.8425% 46.09375% 46.09375%;
-    grid-template-rows: 58px 1400px 300px 20px;
+    grid-template-rows: 57px 1600px auto 0px;
+}
+
+.logo{
+    grid-area: logo;
+    justify-content: center;
 }
 
 .logo img{
@@ -31,7 +36,6 @@
     list-style: none;
     padding: 0;
     margin: auto;
-    height: 70px;
     border-radius: 0px;
     background: #67a219;
     box-shadow: inset 14px 14px 28px #507e14,
@@ -64,12 +68,18 @@
 
 .image{
     grid-area: logo;
+    margin-top: 50px;
     text-align: center;
+}
+
+.image h1{
+    grid-area: logo;
+    color: #67a219;
+    font-size: 40px;
 }
 
 .image img{
     grid-area: logo;
-    margin-top: 20px;
     width: 200px;
 }
 
@@ -78,15 +88,23 @@
     grid-area: nav;
     margin-top: 12px;
     border-radius: 0px;
+    justify-content: center;
     background: #f2f2f2;
-    box-shadow: inset 12px 12px 95px #616161,
+    box-shadow: inset 12px 12px 95px #f2f2f2,
             inset -12px -12px 95px #ffffff;
+}
+
+.infor{
+    grid-area: nav;
+    margin-top: 50px;
+    text-align: center;
 }
 
 .infor1{
     grid-area: nav;
+    text-align: center;
     display: flex;
-    margin-left: 30px;
+    margin-left: 400px;
 }
 
 .infor1 label{
@@ -110,11 +128,13 @@
             inset -5px -5px 10px #ffffff;
     width: 500px;
     height: 30px;
+    padding-left: 10px;
 }
 
 .boton{
     grid-area: nav;
     text-align: center;
+    
 }
 
 .boton font{
@@ -125,6 +145,8 @@
 
 .boton button{
     grid-area: nav;
+    padding: 10px;
+    border-radius: 500px;
     text-align: center;
     border: 2px solid #67a219;
     border-radius: 0px;
@@ -133,16 +155,21 @@
             inset -14px -14px 28px #7ec61f;
 }
 
-.generador p{
+.generador h2{
     grid-area: nav;
     text-align: center;
     font-size: 40px;
     color: #67a219;
 }
 
+.corti-imput{
+    grid-area: nav;
+}
+
 .coti1 input{
     grid-area: nav;
     margin-left: 450px;
+    justify-content: center;
     width: 250px;
     height: 50px;
     border: 2px solid #5a9aae;
@@ -163,6 +190,7 @@ footer{
     grid-area: footer;
     width: 100%;
     border-radius: 0px;
+    justify-content: center;
     background: #67a219;
     box-shadow: inset 14px 14px 28px #507e14,
             inset -14px -14px 28px #7ec61f;
@@ -171,22 +199,27 @@ footer{
 
 .container-footer-all{
     grid-area: footer;
-    width: 100%;
-    max-width: 1600;
+    /*width: 100%;
+    max-width: 1600;*/
     margin: auto;
-    padding: 40px;
+    padding: 20px;
 }
 
 .container-body{
     grid-area: footer;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+footer h2{
+    grid-area: footer;
+    color: white;
 }
 
 /*Manejara toda la parte de la izquierda del footer*/
 .colum1{
     grid-area: footer;
-    max-width: 400;
+    max-width: 400px;
     text-align: center;
 }
 
@@ -199,7 +232,7 @@ footer{
     grid-area: footer;
     font-size: 14px;
     color: #c7c7c7;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 /*Manejara toda la parte del centro del footer*/
@@ -328,6 +361,7 @@ footer{
     max-width: 100%;
     margin: auto;
     width: 100%;
+    margin-top: auto;
     border-radius: 0px;
     border-radius: 0px;
     background: #487114;
