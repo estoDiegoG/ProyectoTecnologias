@@ -42,7 +42,7 @@
                     Escribe aquí tu numero de contacto
                     </label>
                 </div><br>
-                <input type="tel" name="Numero" pattern="[0-9]" min="10" max="20" required autofocus onkeypress="return (event.charCode >= 48 && event.charCode <= 57)"/><br><br>
+                <input type="tel" id="n" name="Numero" pattern="[0-9]" min="10" max="20" required autofocus onkeypress="puntos()"/><br><br>
     
                 <div class="infor1">
                     <img src="Imagenes/Flecha.png">
@@ -252,5 +252,6 @@
             </div>
         </div>
     </footer>
+    <script src="Cotizacion.js"></script>
 </body>
 </html>
