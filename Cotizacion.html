@@ -20,7 +20,7 @@
                 <li><a href="#"><b>Inicio</b></a></li>
                 <li><a href="#"><b>Cotización</b></a></li>
                 <li><a href="#"><b>Nuestros Servicios</b></a></li>
-                <li><a href="#"><b>Extensiones</b></a></li>
+                <li><a href="Extensiones.html"><b>Extensiones</b></a></li>
                 <li><a href="#"><b>Contactanos</b></a></li>
             </ul>
         </nav>
@@ -30,36 +30,36 @@
         <div class="image">
             <h1>
                 Plan de cotización
-            </h1><br>
+            </h1>
             <img src="Imagenes/LOGO LML-HSE.png">
         </div>
 
-        <form action="mailto: lmlsolutions01@gmail.com" method="POST">
+        <!--<form action="mailto: lmlsolutions01@gmail.com" method="POST" onsubmit="generateCotizacion()">-->
+        <form action =" " method="POST" onsubmit="generateCotizacion()"></form>
             <div class="infor">
                 <div class="infor1">
                     <img src="Imagenes/Flecha.png">
                     <label>
                     Escribe aquí tu numero de contacto
                     </label>
-                </div><br>
-                <input type="tel" id="n" name="Numero" pattern="[0-9]" min="10" max="20" required autofocus onkeypress="puntos()"/><br><br>
+                </div>
+                <input type="tel" id="numconta" name="Numero"><br><br>
     
                 <div class="infor1">
                     <img src="Imagenes/Flecha.png">
                     <label>
                     ¿Cómo se llama su empresa?
                     </label>
-                </div><br>
-                <input type="text" name="Nombre empresa" pattern="[a-zA-Z]" required onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"/><br><br>
+                </div>
+                <input type="text" name="Nombre empresa" required onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"/><br><br>
     
                 <div class="infor1">
                     <img src="Imagenes/Flecha.png">
                     <label>
                     ¿Cuántos trabajadores posee su empresa?
                     </label>
-                </div><br>
-                <input type="number" name="Numero de trabajadores" min="1" required/><br><br>
-    
+                </div>
+                <input id="NumTrab" type="number" name="Numero de trabajadores" min="1" >
                 <div class="infor1">
                     <img src="Imagenes/Flecha.png">
                     <label>
@@ -74,7 +74,7 @@
                     ¿Qué tipo de actividades realiza su empresa?
                     </label>
                 </div><br>
-                <input type="text" name="Actividades" required onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"/><br><br>
+                <input type="text" name="Actividades" required><br><br>
                 
                 <div class="infor1">
                     <img src="Imagenes/Flecha.png">
@@ -119,48 +119,80 @@
             </div><br><br>
 
             <div class="boton">
-                <button type="submit">
-                    <font size=5>
+                <button class="boton" type="submit" value="Submit" onclick="generateCotizacion()">
+                    
                          Generar
-                    </font>
+                    
                 </button>
+
+                </form>
             </div><br>
 
-            <div class="generador">
-                <h2>
-                    Plan de cotización
-                </h2><br><br>
+                <!-- <div class="generador">
+                    <h2>
+                        Plan de cotización
+                    </h2><br><br>
 
-                <div class="coti-imput">
-                    <div class="coti1">
-                        <input type="text" name="Numero" readonly/>
-                        <label>
-                            Anual
-                        </label>
-                    </div><br><br>
-                    <div class="coti1">
-                        <input type="text" name="Numero" readonly/>
-                        <label>
-                            Semestral
-                        </label>
-                    </div><br><br>
-                    <div class="coti1">
-                        <input type="text" name="Numero" readonly/>
-                        <label>
-                            Trimestral
-                        </label>
-                    </div><br><br>
-                    <div class="coti1">
-                        <input type="text" name="Numero" readonly/>
-                        <label>
-                            Mensual
-                        </label>
-                    </div><br><br>
+                    <div class="coti-imput">
+                        <div class="coti1">
+                            <input type="text" name="Numero" readonly/>
+                            <label>
+                                Anual
+                            </label>
+                        </div><br><br>
+                        <div class="coti1">
+                            <input type="text" name="Numero" readonly/>
+                            <label>
+                                Semestral
+                            </label>
+                        </div><br><br>
+                        <div class="coti1">
+                            <input type="text" name="Numero" readonly/>
+                            <label>
+                                Trimestral
+                            </label>
+                        </div><br><br>
+                        <div class="coti1">
+                            <input type="text" name="Numero" readonly/>
+                            <label>
+                                Mensual
+                            </label>
+                        </div><br><br>
+                    </div>
+                </div> -->
+                <div class="resultados">
+                    <div class="resultado" id="anual">
+                        <p>anual</p>
+                        <div class="info11">
+                            
+                        </div>
+                    </div>
+                    <div class="resultado" id="mensual">
+                        <p>mensual: </p>
+                        <p id="info12">
+                            
+                        </p>
+                    </div>
+                    
                 </div>
+                <div class="resultados">
+                    <div class="resultado"id="trimestral">
+                        <p>trimestral</p>
+                        <div id="info13">
+                            
+                        </div>
+                    </div>
+                    <div class="resultado"id="semanal">
+                        <p>semanal</p>
+                        <div class="info14">
+                            
+                        </div>
+                    </div>
             </div>
-        </form>
+
     </div>
 
+    
     <!--Se crea el footer que ir en cada una de las pestañas de la pagina-->
     <footer class="footer">
         <div class="container-footer-all">

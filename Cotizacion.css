@@ -5,6 +5,13 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+label{
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center;
+}
+
 .container{
     max-width: 100%;
     display: grid;
@@ -15,7 +22,7 @@
                         "footer footer footer"
                         "container-footer container-footer container-footer";
     grid-template-columns: 7.8425% 46.09375% 46.09375%;
-    grid-template-rows: 57px 1600px auto 0px;
+    grid-template-rows: 57px 2500px auto 0px;
 }
 
 .logo{
@@ -94,6 +101,30 @@
             inset -12px -12px 95px #ffffff;
 }
 
+.resultados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+#info12{
+    
+}
+
+.resultado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    margin: 25px 25px;
+    padding: 10px 10px;
+    border-radius: 50px;
+background: #217365;
+box-shadow:  20px 20px 60px #1c6256,
+             -20px -20px 60px #268474;
+}
+
 .infor{
     grid-area: nav;
     margin-top: 50px;
@@ -104,7 +135,10 @@
     grid-area: nav;
     text-align: center;
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 400px;
+    margin: 50px;
 }
 
 .infor1 label{
@@ -143,7 +177,7 @@
     font-size: 40px;
 }
 
-.boton button{
+.boton{
     grid-area: nav;
     padding: 10px;
     border-radius: 500px;
@@ -153,6 +187,10 @@
     background: #67a219;
     box-shadow: inset 14px 14px 28px #507e14,
             inset -14px -14px 28px #7ec61f;
+}
+
+.boton:hover{
+    color: red;
 }
 
 .generador h2{
