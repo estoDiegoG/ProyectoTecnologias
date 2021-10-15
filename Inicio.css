@@ -6,16 +6,16 @@
     font-weight: normal;
     font-style: normal;
   }
-  *{  
+
+*{  
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto Condensed', sans-serif;
-      font-size: 20px;
-  }
-  header{
+}
+
+ header{
     width: 100%;
-    background-color:rgb(103, 162, 25);
     height: 70px;
 }
 
@@ -43,13 +43,12 @@
     background: rgb(103, 162, 25);
 }
 .navegacion ul{
-    list-style: none;
-    padding-top: 15px;
+    font-size: 15px;
+    margin-top: 25px;
 }
 .menu{
         text-align: center;
         grid-area: menu;
-        list-style: none;
         padding: 0;
         margin: auto;
         border-radius: 0px;
@@ -60,16 +59,18 @@
 .menu > li{
     display: inline;
 }
+
 .menu > li > a{
     float: left;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    margin-left: 10%;;
+    margin-left: 10%;
     color:white;
     display: block;
     
 }
+
 .menu li a:hover{
     border-radius: 0px;
     background: #5a9aae;
@@ -77,6 +78,7 @@
             inset -41px -41px 82px #69b4cc;
     width: auto;
 }
+
 .image{
     text-align: center;
 }
@@ -87,6 +89,7 @@
     width: 200px;
 }
 .flexslider{
+    margin-top: 10px;
     width:100%;
     position: relative;
 }
@@ -208,22 +211,40 @@
     margin-bottom: 200px;
   }
   .conoce{
-      background-color: #0B8C8C;
-      margin-left: 45%;
-      margin-top: 60px;
+      padding: 15px;
+      color: white;
+      border-radius: 10px;
+      background: #67a219;
+        box-shadow: inset 14px 14px 28px #507e14,
+                inset -14px -14px 28px #7ec61f;
+      margin-left: 44%;  
+      margin-top: 40px;
       margin-bottom: 60px;
   }
-  .quien h1{
+
+.conoce font a{
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+}
+
+.quien h1{
+    font-size: 30px;
+    color: #5B98A6;
     text-decoration: bold;
     margin-top: 60px;
     text-align: center;
-  }
-  .quien p{ 
+}
+
+.quien p{ 
     margin-left: 30px;
     text-align:center;
     font-size:  20px;
+}
 
-  }
+.misi p{
+    font-size: 20px;
+}
   
   .container-inicio nav{
       width: 90%;
@@ -231,6 +252,7 @@
       margin-top: 60px;
   }
   .container-inicio nav h2{
+      font-size: 30px;
     color: #5B98A6;
     text-align: center;
 
@@ -245,12 +267,14 @@
     margin-top: 60px;
 }
   .vision h2{
+      font-size: 30px;
     color: #5B98A6;
     text-decoration: bold;
     text-align: center;
   }
   .vision p{
     text-align: center;
+    font-size: 20px;
   }
   .lml{
     margin-top: 30px;
@@ -356,7 +380,6 @@
     width: 70%;
 }
 footer{
-    grid-area: footer;
     width: 100%;
     border-radius: 0px;
     justify-content: center;
@@ -367,7 +390,6 @@ footer{
 }
 
 .container-footer-all{
-    grid-area: footer;
     /*width: 100%;
     max-width: 1600;*/
     margin: auto;
@@ -375,30 +397,26 @@ footer{
 }
 
 .container-body{
-    grid-area: footer;
     display: flex;
     justify-content: space-around;
 }
 
 footer h2{
-    grid-area: footer;
+    
     color: white;
 }
 
 /*Manejara toda la parte de la izquierda del footer*/
 .colum1{
-    grid-area: footer;
     max-width: 400px;
     text-align: center;
 }
 
 .colum1 h1{
-    grid-area: footer;
     font-size: 22px;
 }
 
 .colum1 p{
-    grid-area: footer;
     font-size: 14px;
     color: #c7c7c7;
     margin-top: 30px;
@@ -406,48 +424,42 @@ footer h2{
 
 /*Manejara toda la parte del centro del footer*/
 .colum2{
-    grid-area: footer;
+    
     max-width: 400;
 }
 
 .colum2 h1{
-    grid-area: footer;
+    
     font-size: 22px;
 }
 
 .fila{
-    grid-area: footer;
     margin-top: 20px;
     display: flex;
 }
 
 .fila img{
-    grid-area: footer;
     width: 40px;
     height: 40px;
 }
 
 .fila label{
-    grid-area: footer;
     margin-top: 10px;
     margin-left: 20px;
     color: #c7c7c7;
 }
 
 .fila1{
-    grid-area: footer;
     margin-top: 20px;
     display: flex;
 }
 
 .fila1 img{
-    grid-area: footer;
     width: 40px;
     height: 30px;
 }
 
 .fila1 label{
-    grid-area: footer;
     margin-top: 5px;
     margin-left: 20px;
     color: #c7c7c7;
@@ -455,29 +467,24 @@ footer h2{
 
 /*Manejara toda la parte de la derecha del footer*/
 .colum3{
-    grid-area: footer;
     max-width: 400;
 }
 
 .colum3 h1{
-    grid-area: footer;
     font-size: 22px;
 }
 
 .fila2{
-    grid-area: footer;
     margin-top: 20px;
     display: flex;
 }
 
 .fila2 img{
-    grid-area: footer;
     width: 50px;
     height: 50px;
 }
 
 .fila2 label{
-    grid-area: footer;
     margin-top: 10px;
     max-width: 200px;
     margin-left: 20px;
@@ -485,19 +492,16 @@ footer h2{
 }
 
 .fila21{
-    grid-area: footer;
     margin-top: 20px;
     display: flex;
 }
 
 .fila21 img{
-    grid-area: footer;
     margin-left: 15px;
     width: 25px;
 }
 
 .fila21 label{
-    grid-area: footer;
     margin-top: 10px;
     max-width: 200px;
     margin-left: 20px;
@@ -505,19 +509,16 @@ footer h2{
 }
 
 .fila22{
-    grid-area: footer;
     margin-top: 20px;
     display: flex;
 }
 
 .fila22 img{
-    grid-area: footer;
     width: 50px;
     height: 30px;
 }
 
 .fila22 label{
-    grid-area: footer;
     margin-top: 10px;
     max-width: 200px;
     margin-left: 20px;
@@ -526,7 +527,6 @@ footer h2{
 
 /*Footer final*/
 .container-footer{
-    grid-area: container-footer;
     max-width: 100%;
     margin: auto;
     width: 100%;
@@ -540,20 +540,17 @@ footer h2{
 }
 
 .copyright{
-    grid-area: container-footer;
     margin-left: 50px;
     text-align: center;
     color: #c7c7c7;
 }
 
 .information{
-    grid-area: container-footer;
     margin-top: 10px;
     margin-right: 50px;
 }
 
 .information a{
-    grid-area: container-footer;
     text-decoration: none;
     color: #c7c7c7;
 }

@@ -10,72 +10,84 @@
     display: grid;
     max-width: auto;
     grid-gap: 0px;
-    grid-template-areas: "logo menu menu"
+    grid-template-areas: "todo todo todo"
                         "nav nav nav"
                         "footer footer footer"
                         "container-footer container-footer container-footer";
     grid-template-columns: 7.8425% 46.09375% 46.09375%;
-    grid-template-rows: 58px 900px auto 0px;
+    grid-template-rows: 58px 5800px auto 0px;
+}
+
+header{
+    grid-area: todo;
+    width: 100%;
+    height: 70px;
 }
 
 .logo{
-    grid-area: logo;
-    text-align: center;
-}
-
-.logo img{
-    grid-area: logo;
-    width: 100px;
+    width: 8%;
+    background-color: rgb(214, 214, 214);
+    float: left;
     height: 70px;
     box-sizing: border-box;
 }
 
+.logo>img{
+   display: inline-block;
+   width: 60px;
+   height: 60px;
+   padding-top: 5px;
+   padding-left: 10px;
+}
+
+.navegacion{
+    width: 92%;
+    height: 70px;   
+    float: left;
+    box-sizing:border-box;
+    padding: 0;
+    background: rgb(103, 162, 25);
+}
+
+.navegacion ul{
+    list-style: none;
+    font-size: 15px;
+    margin-top: 25px;
+}
+
 .menu{
     text-align: center;
-    grid-area: menu;
     list-style: none;
     padding: 0;
     margin: auto;
-    height: 70px;
     border-radius: 0px;
     background: #67a219;
     box-shadow: inset 14px 14px 28px #507e14,
-            inset -14px -14px 28px #7ec61f;
-    min-width: 100%;
+                inset -14px -14px 28px #7ec61f;
 }
 
-.menu li a{
-    grid-area: menu;
+.menu > li{
+    display: inline;
+    margin-top: 25px;
+}
+
+.menu > li > a{
+    float: left;
+    text-align: center;
     text-decoration: none;
-    color: white;
-    padding: 25px;
+    text-transform: uppercase;
+    margin-left: 10%;;
+    color:white;
     display: block;
+    
 }
 
 .menu li a:hover{
-    grid-area: menu;
     border-radius: 0px;
     background: #5a9aae;
     box-shadow: inset 41px 41px 82px #4b8090,
             inset -41px -41px 82px #69b4cc;
     width: auto;
-}
-
-.menu li{
-    margin-right: 80px;
-    grid-area: menu;
-    display: inline-block;
-}
-
-.image{
-    grid-area: logo;
-    text-align: center;
-}
-
-.image img{
-    grid-area: logo;
-    margin-top: 20px;
-    width: 200px;
 }
 
 /*Aquí empieza la navegación*/
