@@ -1,6 +1,6 @@
 //document.getElementsByTagName("input").onkeypress = function puntos(){return(charCode >= 48 && charCode <= 57)};
 //var onkeypress: (this: Window, ev: KeyboardEvent) => any
-// var inputs = document.getElementById(n);
+// var inputs = document.querySelector(n);
 
 // function(){
 //     inputs.return(charCode >= 48 && charCode <= 57);
@@ -10,7 +10,7 @@
 //     // }
 // }
 
-// var a = document.getElementById("numconta").Value;
+// var a = document.querySelector("numconta").Value;
 
 // jQuery(document).ready(function()
 // {
@@ -23,9 +23,11 @@
 //    });
 // });
 
+let trabajadores2;
+
 function trab(){
-    var trabajadores2;
-    var trabajadores=parseInt(document.getElementById("#NumTrab").value);
+    //var trabajadores2;
+    var trabajadores=parseInt(document.querySelector("#NumTrab").value);
 
     if(trabajadores > 0 && trabajadores <= 10){//micro empresa
         trabajadores2=trabajadores*50000;
@@ -46,7 +48,7 @@ function trab(){
 
 function metrosc(){
     var mcuadra2;
-    var mcuadra=parseInt(document.getElementById("#metros").value);
+    var mcuadra=parseInt(document.querySelector("#metros").value);
 
     if(mcuadra > 0 && mcuadra <= 500){//Micro empresa
         mcuadra2=mcuadra*1000000;
@@ -67,7 +69,7 @@ function metrosc(){
 
 function riesgos(){
     var riesgo2;
-    var riesgo=document.getElementById("#ries").value;
+    var riesgo=document.querySelector("#ries").value;
 
     if(riesgo == "Si"){
         riesgo2=50;
@@ -85,10 +87,10 @@ function generateCotizacion() {
     metrosc();
     riesgos();
 
-    document.getElementById("#resul1").innerHTML=(trabajadores2+mcuadra2)-((trabajadores2+mcuadra2)*20/100);
-    doument.getElementById("#resul2").innerHTML=trabajadores2+mcuadra2-((trabajadores2+mcuadra2)*15/100);
-    doument.getElementById("#resul3").innerHTML=trabajadores2+mcuadra2-((trabajadores2+mcuadra2)*10/100);
-    doument.getElementById("#resul4").innerHTML=trabajadores2+mcuadra2;
+    document.querySelector("#resul1").innerHTML=(trab()+metrosc())-((trab()+metrosc())*20/100);
+    document.querySelector("#resul2").innerHTML=trab()+metrosc()-((trab()+metrosc())*15/100);
+    document.querySelector("#resul3").innerHTML=trab()+metrosc()-((trab()+metrosc())*10/100);
+    document.querySelector("#resul4").innerHTML=trab()+metrosc();
 
     // document.querySelector("#info12").innerHTML=trabajadores;
     // document.querySelector("#info13").innerHTML=numeroContacto;
