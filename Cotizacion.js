@@ -23,25 +23,6 @@
 //    });
 // });
 
-
-function generateCotizacion() {
-    //obtiene valores del form segun su ID
-    
-    trab();
-    metrosc();
-    riesgos();
-
-    document.getElementById("#resul1").innerHTML=(trabajadores2+mcuadra2)-((trabajadores2+mcuadra2)*20/100);
-    doument.getElementById("#resul2").innerHTML=trabajadores2+mcuadra2-((trabajadores2+mcuadra2)*15/100);
-    doument.getElementById("#resul3").innerHTML=trabajadores2+mcuadra2-((trabajadores2+mcuadra2)*10/100);
-    doument.getElementById("#resul4").innerHTML=trabajadores2+mcuadra2;
-
-    // document.querySelector("#info12").innerHTML=trabajadores;
-    // document.querySelector("#info13").innerHTML=numeroContacto;
-
-    
-}
-
 function trab(){
     var trabajadores2;
     var trabajadores=parseInt(document.getElementById("#NumTrab").value);
@@ -95,4 +76,22 @@ function riesgos(){
     if(riesgo == "No"){
         riesgo2=25;
     }
+}
+
+function generateCotizacion() {
+    //obtiene valores del form segun su ID
+    
+    trab();
+    metrosc();
+    riesgos();
+
+    document.getElementById("#resul1").innerHTML=(trabajadores2+mcuadra2)-((trabajadores2+mcuadra2)*20/100);
+    doument.getElementById("#resul2").innerHTML=trabajadores2+mcuadra2-((trabajadores2+mcuadra2)*15/100);
+    doument.getElementById("#resul3").innerHTML=trabajadores2+mcuadra2-((trabajadores2+mcuadra2)*10/100);
+    doument.getElementById("#resul4").innerHTML=trabajadores2+mcuadra2;
+
+    // document.querySelector("#info12").innerHTML=trabajadores;
+    // document.querySelector("#info13").innerHTML=numeroContacto;
+
+    
 }
