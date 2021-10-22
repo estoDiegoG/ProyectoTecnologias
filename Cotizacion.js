@@ -81,17 +81,26 @@ function riesgos(){
 function generateCotizacion() {
     //obtiene valores del form segun su ID
     
-    trab();
-    metrosc();
-    riesgos();
+    // trab();
+    // metrosc();
+    // riesgos();
 
-    document.getElementById("#resul1").innerHTML=(trabajadores2+mcuadra2)-((trabajadores2+mcuadra2)*20/100);
-    doument.getElementById("#resul2").innerHTML=trabajadores2+mcuadra2-((trabajadores2+mcuadra2)*15/100);
-    doument.getElementById("#resul3").innerHTML=trabajadores2+mcuadra2-((trabajadores2+mcuadra2)*10/100);
-    doument.getElementById("#resul4").innerHTML=trabajadores2+mcuadra2;
+    // document.getElementById("#resul1").innerHTML=(trabajadores2+mcuadra2)-((trabajadores2+mcuadra2)*20/100);
+    // doument.getElementById("#resul2").innerHTML=trabajadores2+mcuadra2-((trabajadores2+mcuadra2)*15/100);
+    // doument.getElementById("#resul3").innerHTML=trabajadores2+mcuadra2-((trabajadores2+mcuadra2)*10/100);
+    // doument.getElementById("#resul4").innerHTML=trabajadores2+mcuadra2;
 
-    // document.querySelector("#info12").innerHTML=trabajadores;
-    // document.querySelector("#info13").innerHTML=numeroContacto;
+    // // document.querySelector("#info12").innerHTML=trabajadores;
+    // // document.querySelector("#info13").innerHTML=numeroContacto;
 
+    let formulario=document.getElementById("formulario_cotizacion")
+
+    console.log(formulario)
+
+    console.log(formulario.elements["numero_trabajadores"].value)
+
+    //para imprimir usar un div o un span
     
 }
+
+
