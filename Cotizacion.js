@@ -23,6 +23,22 @@
 //    });
 // });
 
+
+// function generateCotizacion(){
+//     trab();
+//     metrosc();
+//     riesgos();
+
+//     document.getElementById("#resul1").innerHTML=(trabajadores2+mcuadra2)-((trabajadores2+mcuadra2)*20/100);
+//     doument.getElementById("#resul2").innerHTML=trabajadores2+mcuadra2-((trabajadores2+mcuadra2)*15/100);
+//     doument.getElementById("#resul3").innerHTML=trabajadores2+mcuadra2-((trabajadores2+mcuadra2)*10/100);
+//     doument.getElementById("#resul4").innerHTML=trabajadores2+mcuadra2;
+
+//     // document.querySelector("#info12").innerHTML=trabajadores;
+//     // document.querySelector("#info13").innerHTML=numeroContacto;
+// }
+
+
 let trabajadores2;
 
 function trab(){
@@ -80,7 +96,13 @@ function riesgos(){
     }
 }
 
+
+
+
+
+
 function generateCotizacion() {
+    let trabajadores2, mcuadra2, riesg, ubicacion2, sedes2
     //obtiene valores del form segun su ID
     
     // trab();
@@ -96,13 +118,73 @@ function generateCotizacion() {
     // // document.querySelector("#info13").innerHTML=numeroContacto;
 
     let formulario=document.getElementById("formulario_cotizacion")
+    let trabajadores=formulario.elements["numero_trabajadores"].value
+    let mcuadra=formulario.elements["metros_cuadrados"].value
+    let riesgo=formulario.elements["riesgo"]
+    let ubicacion=formulario.elements["ubicacion"]
+    let sedes=formulario.elements["sedes"].value
 
-    console.log(formulario)
+    //Numero de trabajadores
+    if(trabajadores > 0 && trabajadores <= 10){//micro empresa
+        trabajadores2=trabajadores*50000;
+                //document.querySelector("#info12").innerHTML=trabajadores*50000;
+    }
+    else if(trabajadores > 10 && trabajadores <= 50){ //Empresa pequeña
+        trabajadores2=trabajadores*100000;
+    }
+    else if(trabajadores > 50 && trabajadores <= 250){// Empresa mediana
+        trabajadores2=trabajadores*150000;
+    }
+    else if(trabajadores > 250){//Gran empresa
+        trabajadores2=trabajadores*200000;
+    }
 
-    console.log(formulario.elements["numero_trabajadores"].value)
+    //Metros cuadrados
+    if(mcuadra > 0 && mcuadra <= 500){//Micro empresa
+        mcuadra2=mcuadra*1000000;
+        //document.querySelector("#info12").innerHTML=mcuadra*1000000;
+    }
+    else if(mcuadra > 500 && mcuadra <= 1200){//Empresa pequeña
+        mcuadra2=mcuadra*2500000;
+    }
+    else if(mcuadra > 500 && mcuadra <= 8000){//Empresa mediana
+        mcuadra2=mcuadra*10000000;
+    }
+    else if(mcuadra > 8000){//Gran empresa
+        mcuadra2=mcuadra*50000000;
+    }
+
+    //Riesgos
+    if (riesgo == 'Si') {
+        riesg=800000
+    }
+    else{
+        riesg=100000
+    }
+
+    //Ubicación
+    if (ubicacion == 'Bogotá') {
+        ubicacion2=100000
+    }
+    else{
+        ubicacion2=500000
+    }
+
+    //sedes
+
+    if (sedes > 0) {
+        sedes2=1000000*sedes
+    }
+
+    document.getElementById("#resul1").innerHTML=(trabajadores2+mcuadra2)-((trabajadores2+mcuadra2)*20/100);
+    document.getElementById("#resul2").innerHTML=trabajadores2+mcuadra2-((trabajadores2+mcuadra2)*15/100);
+    document.getElementById("#resul3").innerHTML=trabajadores2+mcuadra2-((trabajadores2+mcuadra2)*10/100);
+    document.getElementById("#resul4").innerHTML=trabajadores2+mcuadra2;
+
+    // console.log(formulario)
+
+    /*console.log(formulario.elements["numero_trabajadores"].value)*/
 
     //para imprimir usar un div o un span
     
 }
-
-

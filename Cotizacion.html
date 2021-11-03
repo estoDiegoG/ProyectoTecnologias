@@ -51,7 +51,7 @@
                         ¿Cómo se llama su empresa?
                         </label>
                     </div>
-                    <input type="text" name="nombre_empresa" required onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"/><br><br>
+                    <input type="text" name="nombre_empresa" onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"/><br><br>
         
                     <div class="infor1">
                         <img src="Imagenes/Flecha.png">
@@ -66,7 +66,7 @@
                         ¿Cuántos metros cuadrados tiene su establecimiento?
                         </label>
                     </div><br>
-                    <input type="number" id="metros" name="metros_cuadrados" min="1" required/><br><br>
+                    <input type="number" id="metros" name="metros_cuadrados" min="1"/><br><br>
         
                     <div class="infor1">
                         <img src="Imagenes/Flecha.png">
@@ -74,7 +74,7 @@
                         ¿Qué tipo de actividades realiza su empresa?
                         </label>
                     </div><br>
-                    <input type="text" name="actividades" required><br><br>
+                    <input type="text" name="actividades"><br><br>
                     
                     <div class="infor1">
                         <img src="Imagenes/Flecha.png">
@@ -82,7 +82,7 @@
                         ¿Su empresa realiza actividades de alto riesgo?
                         </label>
                     </div><br>
-                    <input type="text" id="ries" name="riesgo" list="Riesgo" required/><br><br>
+                    <input type="text" id="ries" name="riesgo" list="Riesgo"/><br><br>
                     <datalist id="Riesgo">
                         <option>Si</option>
                         <option>No</option>
@@ -94,7 +94,7 @@
                         ¿Dónde se encuentra ubicada su empresa? (Sede principal)
                         </label>
                     </div><br>
-                    <input type="text" name="ubicacion" list="Ubicacion" required/><br><br>
+                    <input type="text" name="ubicacion" list="Ubicacion"/><br><br>
                     <datalist id="Ubicacion">
                         <option>Bogotá</option>
                         <option>Medellín</option>
@@ -115,7 +115,7 @@
                         ¿Cuantas sedes tiene su empresa?
                         </label>
                     </div><br>
-                    <input type="number" name="sedes" min="0" required/><br><br>
+                    <input type="number" name="sedes" min="0"/><br><br>
                 </div><br><br>
 
             <div class="boton">
