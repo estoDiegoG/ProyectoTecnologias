@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Contactanos.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Lml Solutions</title>
+</head>
+<body class="container">
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>            
+        </label>
+        <a href="Inicio.html" class="enlace">
+            <img src="imagenes/Logo lml Solutions con color.png" class="logo">
+        </a>
+        <ul>
+            <li><a href="Inicio.html"><b>Inicio</b></a></li>
+            <li><a href="Cotizacion.html"><b>Cotización</b></a></li>
+            <li><a href="Servicios.html"><b>Nuestros Servicios</b></a></li>
+            <li><a href="Extensiones.html"><b>Extensiones</b></a></li>
+            <li><a class="active" href="Contactanos.html"><b>Contactanos</b></a></li>
+        </ul>
+    </nav>
+          
+    <div class="nav">
+        <div class="tcontactanos">
+            <h1>
+                Contactanos
+            </h1>
+            <p>
+                ¿Eres un cliente activo?<br>Contactate con nosotros<br>para saber mas
+            </p>
+        </div>
+        <br><br>
+        <!--Aqui se hace todo el formulario apra que el usuario lo llene-->     
+        <form action="mailto: lmlsolutions01@gmail.com">
+            <div class="formul">
+                <input type="text" name="nombre" placeholder="Nombres*" required onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"/><br><br><br>
+                <input type="text" name="Apellido" placeholder="Apellidos*" required onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"/><br><br><br>
+                <input type="text" name="ciudad" placeholder="Ciudad*" list="ciudad" required/>
+                <datalist id="ciudad">
+                    <option>Bogotá</option>
+                    <option>Medellín</option>
+                    <option>Cali</option>
+                    <option>Barranquilla</option>
+                    <option>Cartagena de indias</option>
+                    <option>Soacha</option>
+                    <option>Cúcuta</option>
+                    <option>Soledad</option>
+                    <option>Bucaramanga</option>
+                    <option>Bello</option>
+                    <option>Otro...</option>
+                </datalist>
+                <br><br><br>
+                <input type="text" name="telefono" placeholder="Teléfono" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)"/><br><br><br>
+                <input type="text" name="celular" placeholder="Celular*" required onkeypress="return (event.charCode >= 48 && event.charCode <= 57)"/><br><br><br>
+                <textarea name="comentario" rows="10" cols="60" placeholder="Escribe aquí tu mensaje"></textarea><br><br>
+            </div>
+            <div class="formul2">               
+                <input type="checkbox" name="palomita"/>
+                    Acepto los <a target="_blank" href="https://minciencias.gov.co/ciudadano/terminosycondiciones-datospersonales">Términos y condiciones</a><br><br>
+                <button type="submit">
+                    <font size=5 color=white>
+                         Enviar
+                    </font>
+                </button>
+                <button type="reset">
+                    <font size=5 color=white>
+                        Reiniciar
+                    </font>
+                </button>
+            </div>
+        </form>
+        <br>
+    </div>
+
+    <!--Se crea el footer que ir en cada una de las pestañas de la pagina-->
+    <footer>
+        <div class="container-footer-all">
+            <div class="container-body">
+            <!--Se crea la primera columna donde irá información adicional de la empresa-->
+                <div class="colum1">
+                    <h2>
+                        Más información de la compañia
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>
+                        Aperiam iusto quae illo aspernatur eum reprehenderit adipisci<br>
+                        eius sequi porro quidem molestias vel maiores sapiente, odit nesciunt<br>
+                        fuga sit eligendi accusantium!
+                    </p>
+                </div>
+
+            <!--Aquí se agrega la información de las redes sociales que maneja la empresa-->
+                <div class="colum2">
+                <h2>
+                    Redes Sociales
+                </h2>
+                <div class="fila">
+                    <a target="_blank" href="https://www.facebook.com/lmlsolution/?ref=page_internal">
+                        <img src="Imagenes/Logo Facebook.png"/>
+                    </a>
+                    <label for="">
+                        Siguenos en Facebook
+                    </label>
+                </div>
+                <div class="fila1">
+                    <a target="_blank" href="mailto:lmlsolutions01@gmail.com">
+                        <img src="Imagenes/Logo Gmail.png" width="35" height="25"/>
+                    </a>
+                    <label>
+                        Mandanos un correo
+                    </label>
+                </div>
+                </div>
+
+            <!--Aquí se agrega la información extra de contacto de la empresa-->
+                <div class="colum3">
+                <h2>
+                    Información de contacto
+                </h2>
+                <div class="fila2">
+                    <img src="Imagenes/casa.png">
+                    <label>
+                        Funza Cundinamarca, Mirador de Celta, Calle 7 #7-39
+                    </label>
+                </div>
+                <div class="fila21">
+                    <img src="Imagenes/celular.png">
+                    <label>
+                        +57 316 6182982
+                    </label>
+                </div>
+                <div class="fila22">
+                    <img src="Imagenes/correo.png">
+                    <label>
+                        lmlsolutions01@gmail.com
+                    </label>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-footer">
+            <div class="copyright">
+                    Políticas de privacidad | ©2021 Copyright | Todos los derechos reservados<br>
+                    Desarrollado por Cristhian y Tomas
+            </div>
+            <div class="information">
+                <a href="Inicio.html">
+                    Inicio | 
+                </a>
+                <a href="Cotizacion.html">
+                    Cotización | 
+                </a>
+                <a href="Servicios.html">
+                    Nuestros servicios | 
+                </a>
+                <a href="Extensiones.html">
+                    Extensiones | 
+                </a>
+                <a href="Contactanos.html">
+                    Contactanos
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="Contactanos.js"></script>
+</body>
+</html>

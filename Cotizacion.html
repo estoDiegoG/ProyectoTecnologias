@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="Cotizacion.css" type="text/css">
+    <title>Lml Solutions</title>
+</head>
+<body class="container">
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>            
+        </label>
+        <a href="Inicio.html" class="enlace">
+            <img src="imagenes/Logo lml Solutions con color.png" class="logo">
+        </a>
+        <ul>
+            <li><a href="Inicio.html"><b>Inicio</b></a></li>
+            <li><a class="active" href="Cotizacion.html"><b>Cotización</b></a></li>
+            <li><a href="Servicios.html"><b>Nuestros Servicios</b></a></li>
+            <li><a href="Extensiones.html"><b>Extensiones</b></a></li>
+            <li><a href="Contactanos.html"><b>Contactanos</b></a></li>
+        </ul>
+    </nav>
+          
+    <div class="nav">
+        <div class="image">
+            <h1>
+                Plan de cotización
+            </h1>
+            <img src="Imagenes/LOGO LML-HSE.png">
+        </div>
+
+        <!--<form action="mailto: lmlsolutions01@gmail.com" method="POST" onsubmit="generateCotizacion()">-->
+            <form action =" " id="formulario_cotizacion" onsubmit="generateCotizacion()">
+                <div class="infor">
+                    <div class="infor1">
+                        <img src="Imagenes/Flecha.png">
+                        <label>
+                        Escribe aquí tu numero de contacto
+                        </label>
+                    </div>
+                    <input type="tel" id="numconta" name="numero" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)"><br><br>
+        
+                    <div class="infor1">
+                        <img src="Imagenes/Flecha.png">
+                        <label>
+                        ¿Cómo se llama su empresa?
+                        </label>
+                    </div>
+                    <input type="text" name="nombre_empresa" required onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"/><br><br>
+        
+                    <div class="infor1">
+                        <img src="Imagenes/Flecha.png">
+                        <label>
+                        ¿Cuántos trabajadores posee su empresa?
+                        </label>
+                    </div>
+                    <input id="NumTrab" type="number" name="numero_trabajadores" min="1" >
+                    <div class="infor1">
+                        <img src="Imagenes/Flecha.png">
+                        <label>
+                        ¿Cuántos metros cuadrados tiene su establecimiento?
+                        </label>
+                    </div><br>
+                    <input type="number" id="metros" name="metros_cuadrados" min="1" required/><br><br>
+        
+                    <div class="infor1">
+                        <img src="Imagenes/Flecha.png">
+                        <label>
+                        ¿Qué tipo de actividades realiza su empresa?
+                        </label>
+                    </div><br>
+                    <input type="text" name="actividades" required><br><br>
+                    
+                    <div class="infor1">
+                        <img src="Imagenes/Flecha.png">
+                        <label>
+                        ¿Su empresa realiza actividades de alto riesgo?
+                        </label>
+                    </div><br>
+                    <input type="text" id="ries" name="riesgo" list="Riesgo" required/><br><br>
+                    <datalist id="Riesgo">
+                        <option>Si</option>
+                        <option>No</option>
+                    </datalist>
+        
+                    <div class="infor1">
+                        <img src="Imagenes/Flecha.png">
+                        <label>
+                        ¿Dónde se encuentra ubicada su empresa? (Sede principal)
+                        </label>
+                    </div><br>
+                    <input type="text" name="ubicacion" list="Ubicacion" required/><br><br>
+                    <datalist id="Ubicacion">
+                        <option>Bogotá</option>
+                        <option>Medellín</option>
+                        <option>Cali</option>
+                        <option>Barranquilla</option>
+                        <option>Cartagena de indias</option>
+                        <option>Soacha</option>
+                        <option>Cúcuta</option>
+                        <option>Soledad</option>
+                        <option>Bucaramanga</option>
+                        <option>Bello</option>
+                        <option>Otro...</option>
+                    </datalist>
+        
+                    <div class="infor1">
+                        <img src="Imagenes/Flecha.png">
+                        <label>
+                        ¿Cuantas sedes tiene su empresa?
+                        </label>
+                    </div><br>
+                    <input type="number" name="sedes" min="0" required/><br><br>
+                </div><br><br>
+
+            <div class="boton">
+                <button class="boton1" type="submit" value="Submit" onclick="generateCotizacion()">
+                    
+                         Generar
+                    
+                </button>
+
+                </form>
+            </div><br>
+
+            <div class="resultados">
+                <div class="resultado" id="anual">
+                    <p><b>Plan de pago<br>Anual</b></p>
+                    <div class="info14">
+                        <p type="text" id="resul1" name="ResulAnual" readonly></p><br>
+                        <h2>20% descuento</h2>
+                    </div>
+                </div>
+                <div class="resultado" id="semestral">
+                    <p><b>Plan de pago<br>Semestral</b></p>
+                    <div class="info14">
+                        <input type="text" id="resul2" name="ResulSemestral" readonly>
+                        <h2>15% descuento</h2>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="resultados">
+                <div class="resultado" id="trimestral">
+                    <p><b>Plan de pago<br>Trimestral</b></p>
+                    <div class="info14">
+                        <input type="text" id="resul3" name="ResulTrimestral" readonly><br>
+                        <h2>10% descuento</h2>
+                    </div>
+                </div>
+
+                <div class="resultado" id="mensual">
+                    <p><b>Plan de pago<br>Mensual</b></p>
+                    <div class="info14">
+                        <input type="text" id="resul4" name="ResulMensual" readonly><br>
+                        <h2>Precio Normal</h2>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    
+    <!--Se crea el footer que ir en cada una de las pestañas de la pagina-->
+    <footer class="footer">
+        <div class="container-footer-all">
+            <div class="container-body">
+            <!--Se crea la primera columna donde irá información adicional de la empresa-->
+                <div class="colum1">
+                <h1>
+                    Más información de la compañia
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>
+                    Aperiam iusto quae illo aspernatur eum reprehenderit adipisci<br>
+                    eius sequi porro quidem molestias vel maiores sapiente, odit nesciunt<br>
+                    fuga sit eligendi accusantium!
+                </p>
+                </div>
+
+            <!--Aquí se agrega la información de las redes sociales que maneja la empresa-->
+                <div class="colum2">
+                <h1>
+                    Redes Sociales
+                </h1>
+                <div class="fila">
+                    <a target="_blank" href="https://www.facebook.com/lmlsolution/?ref=page_internal">
+                        <img src="Imagenes/Logo Facebook.png"/>
+                    </a>
+                    <label for="">
+                        Siguenos en Facebook
+                    </label>
+                </div>
+                <div class="fila1">
+                    <a target="_blank" href="mailto:lmlsolutions01@gmail.com">
+                        <img src="Imagenes/Logo Gmail.png" width="35" height="25"/>
+                    </a>
+                    <label>
+                        Mandanos un correo
+                    </label>
+                </div>
+                </div>
+
+            <!--Aquí se agrega la información extra de contacto de la empresa-->
+                <div class="colum3">
+                <h1>
+                    Información de contacto
+                </h1>
+                <div class="fila2">
+                    <img src="Imagenes/casa.png">
+                    <label>
+                        Funza Cundinamarca, Mirador de Celta, Calle 7 #7-39
+                    </label>
+                </div>
+                <div class="fila21">
+                    <img src="Imagenes/celular.png">
+                    <label>
+                        +57 316 6182982
+                    </label>
+                </div>
+                <div class="fila22">
+                    <img src="Imagenes/correo.png">
+                    <label>
+                        lmlsolutions01@gmail.com
+                    </label>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-footer">
+            <div class="copyright">
+                Políticas de privacidad | ©2021 Copyright | Todos los derechos reservados<br>
+                Desarrollado por Cristhian y Tomas
+            </div>
+            <div class="information">
+                <a href="Inicio.html">
+                    Inicio | 
+                </a>
+                <a href="Cotizacion.html">
+                    Cotización | 
+                </a>
+                <a href="Servicios.html">
+                    Nuestros servicios | 
+                </a>
+                <a href="Extensiones.html">
+                    Extensiones | 
+                </a>
+                <a href="Contactanos.html">
+                    Contactanos
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="Cotizacion.js"></script>
+</body>
+</html>
