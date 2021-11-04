@@ -23,7 +23,6 @@
 //    });
 // });
 
-
 // function generateCotizacion(){
 //     trab();
 //     metrosc();
@@ -37,7 +36,6 @@
 //     // document.querySelector("#info12").innerHTML=trabajadores;
 //     // document.querySelector("#info13").innerHTML=numeroContacto;
 // }
-
 
 let trabajadores2;
 
@@ -100,9 +98,11 @@ function riesgos(){
 
 
 
-
 function generateCotizacion() {
     let trabajadores2, mcuadra2, riesg, ubicacion2, sedes2
+    var form = document.getElementById("formulario_cotizacion");
+    function handleForm(event) { event.preventDefault(); } 
+    form.addEventListener('submit', handleForm);
     //obtiene valores del form segun su ID
     
     // trab();
@@ -176,10 +176,10 @@ function generateCotizacion() {
         sedes2=1000000*sedes
     }
 
-    document.getElementById("#resul1").innerHTML=(trabajadores2+mcuadra2)-((trabajadores2+mcuadra2)*20/100);
-    document.getElementById("#resul2").innerHTML=trabajadores2+mcuadra2-((trabajadores2+mcuadra2)*15/100);
-    document.getElementById("#resul3").innerHTML=trabajadores2+mcuadra2-((trabajadores2+mcuadra2)*10/100);
-    document.getElementById("#resul4").innerHTML=trabajadores2+mcuadra2;
+    document.querySelector("#resul1").innerHTML=(trabajadores2+mcuadra2)-((trabajadores2+mcuadra2)*20/100);
+    document.querySelector("#resul2").innerHTML=trabajadores2+mcuadra2-((trabajadores2+mcuadra2)*15/100);
+    document.querySelector("#resul3").innerHTML=trabajadores2+mcuadra2-((trabajadores2+mcuadra2)*10/100);
+    document.querySelector("#resul4").innerHTML=trabajadores2+mcuadra2;
 
     // console.log(formulario)
 

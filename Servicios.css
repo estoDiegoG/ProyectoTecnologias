@@ -157,7 +157,7 @@ h3{
     font-size: 25px;
 }
 
-.lista{
+/* .lista{
     margin-top: 20px;
     display: flex;
 }
@@ -172,7 +172,7 @@ h3{
     margin-left: 15%;
     width: 12%;
     height: 12%;
-}
+} */
 
 /*segundo servicio*/
 .emer2{
@@ -869,10 +869,6 @@ footer h2{
 
     .infor1 h3{
         font-size: 25px;
-    }
-
-    .lista{
-        display: none;
     }
 
     .lista ul li{
