@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>Vista Previa</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     <script src="js/jquery.flexslider.js"></script>
@@ -18,20 +19,22 @@
       </script>
 </head>
 <body class="container">
-    <header class="todo">
-        <img src="imagenes/Logo lml Solutions con color.png" class="logo"/>
-        <nav class="navegacion">
-            <ul class="menu">
-                <li><a href="Inicio.html"><b>Inicio</b></a></li>
-                <li><a href="Cotizacion.html"><b>Cotización</b></a></li>
-                <li><a href="Servicios.html"><b>Nuestros Servicios</b></a></li>
-                <li><a href="Extensiones.html"><b>Extensiones</b></a></li>
-                <li><a href="Contactanos.html"><b>Contactanos</b></a></li>
-            </ul>
-        </nav>
-    </header>
-
-    </div>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>            
+        </label>
+        <a href="Inicio.html" class="enlace">
+            <img src="imagenes/Logo lml Solutions con color.png" class="logo">
+        </a>
+        <ul>
+            <li><a href="Inicio.html"><b>Inicio</b></a></li>
+            <li><a href="Cotizacion.html"><b>Cotización</b></a></li>
+            <li><a class="active" href="Servicios.html"><b>Nuestros Servicios</b></a></li>
+            <li><a href="Extensiones.html"><b>Extensiones</b></a></li>
+            <li><a href="Contactanos.html"><b>Contactanos</b></a></li>
+        </ul>
+    </nav>
         <div class="flexslider">
             <ul class="slides"> 
                 <li>
@@ -48,13 +51,12 @@
                 </li>
             </ul>
         </div>
-
         <button class="conoce" type="submit">
-            <font size=6>
+            <font size=5>
                 <a href="Servicios.html"><b>Conoce más</b></a>
             </font>
         </button>
-
+        
         <div class="container-inicio">
             <header class="quien">
                 <h1>¿Quienes Somos?</h1>
@@ -67,9 +69,11 @@
                     dificultades que tengan las empresas.</p>
             </header>
             <section class="video">
-                <h1><iframe width="90%" height="350px" src="https://www.youtube.com/embed/CDV2AwOeeis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></h1>
+                <h1><iframe width="85%" height="300px" src="https://www.youtube.com/embed/CDV2AwOeeis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></h1>
             </section>
-            <nav class="misi">
+        </div>
+<div class="obj">
+            <div class="mision">
                 <h2>Misión</h2>
                 <br>
                 <p>
@@ -79,8 +83,8 @@
                     acerca del amor propio, de otro y del entorno, buscando dejar
                     huella en Colombia y el mundo.
                 </p>
-            </nav>
-            <section class="vision">
+                </div>
+            <div class="vision">
                 <h2>Visión</h2>
                 <br>
                 <p>
@@ -90,327 +94,308 @@
                     parte de la investigación científica y creación de nuevas formas de cuidado 
                     de la salud y el ambiente en el trabajo.
                 </p>
-            </section>
-        </div>
-        <div>
-        <header class="lml">
-            <center>
-            <h2>LML SOLUTIONS presenta...</h2>
-            <br>
-            <h3><img src="Imagenes/LOGO LML-HSE.png" alt=""></h3>
-            <br>
-            <p>
-                LML-HSE se encarga de Prevenir accidentes, enfermedades
-                laborales, reducir riesgos, controlar peligros y tener
-                preparación ante amenazas futuras haciendo uso de sistemas  
-                de gestión, asesorías y capacitaciones.
-            </p>
-            </center>
-            </header>
-        </div>
-        <div class="propiedades">
-            <header class="enfoque">
-                <h1>Nos Enfocamos en...</h1>
+            </div>
+                </div>
+                <div class="empresa">
+                <header class="lml">
+                    <center>
+                    <h2>LML SOLUTIONS presenta...</h2>
                     <br>
-            </header>
-            <section class="beneficios">
-                <h1>Beneficios de nuestros servicios</h1>
-            </section>
-            <nav class="explicacion">
-                <p>
-                    <img src="Imagenes/Flecha.png"> 
-                    Sistema de gestión seguridad y salud en el trabajo (SST)</p>
-                <p>
+                    <h3><img src="Imagenes/LOGO LML-HSE.png" alt=""></h3>
                     <br>
-                    <img src="Imagenes/Flecha.png">
-                    Capacitaciones SST y Ambientales
-                </p>
-                <p>
+                    <p>
+                        LML-HSE se encarga de Prevenir accidentes, enfermedades
+                        laborales, reducir riesgos, controlar peligros y tener
+                        preparación ante amenazas futuras haciendo uso de sistemas  
+                        de gestión, asesorías y capacitaciones.
+                    </p>
+                    </center>
+                </div>
+                <div class="logros">
+                <div class="propiedades">
+                        <h1>Nos Enfocamos en...</h1>
+                        <br>
+                    <ul>
+                        <li>
+                            <img src="Imagenes/Flecha.png"> 
+                            Sistema de gestión seguridad y salud en el trabajo (SST)
+                        <li>
+                            <img src="Imagenes/Flecha.png">
+                            Capacitaciones SST y Ambientales
+                        </li>
+                        <li>
+                            <img src="Imagenes/Flecha.png">
+                            Proyectos y programas HSE
+                        </li>
+                        <li>
+                            <img src="Imagenes/Flecha.png">
+                            Protocolos de Bioseguridad
+                        </li>
+                        <li>
+                            <img src="Imagenes/Flecha.png">
+                            Procedimientos seguros
+                        </li>
+                        <li>
+                            <img src="Imagenes/Flecha.png">
+                            Y mucho mas...
+                        </li>
+                    </ul>
+                </div>
+                    <div class="beneficios">
+                        <h1>Beneficios de nuestros servicios</h1>
+                        <br>
+                        <li>
+                            <img src="Imagenes/Flecha.png">
+                            Apoyo en el cumplimiento de
+                            requerimientos legales
+                        </li>
+                        <li>
+                            <img src="Imagenes/Flecha.png">
+                            Identificación de riesgos
+                        </li>
+                        <li>
+                            <img src="Imagenes/Flecha.png">
+                            Reducción de costos y ausentismos
+                        </li>
+                        <li>
+                            <img src="Imagenes/Flecha.png">
+                            Protección de la imagen y valor de la marca
+                        </li>
+                        <li> 
+                            <img src="Imagenes/Flecha.png">
+                            Maximiza la productividad de los trabajadores
+                        </li>
+                        <li>
+                            <img src="imagenes/Flecha.png">
+                            Y mucho mas...
+                        </li>
+                </div>
+            </div>
+            <div class="uso">
+                <header>
+                    <center>
+                    <h1>¿Qué es un SG-SST?</h1>
                     <br>
-                    <img src="Imagenes/Flecha.png">
-                    Proyectos y programas HSE
-                </p>
-                <p>
+                    </center>
+                </header>
                     <br>
-                    <img src="Imagenes/Flecha.png">
-                    Protocolos de Bioseguridad
-                </p>
-                <p>
-                    <br>
-                    <img src="Imagenes/Flecha.png">
-                    Procedimientos seguros
-                </p>
-                <p>
-                    <br>
-                    <img src="Imagenes/Flecha.png">
-                    Y mucho mas...
-                </p>
-            </nav>
-            <section class="desplegar">
-                <p>
-                    <img src="Imagenes/Flecha.png">
-                    Apoyo en el cumplimiento de
-                    requerimientos legales
-                </p>
-                <p>
-                    <br>
-                    <img src="Imagenes/Flecha.png">
-                    Identificación de riesgos
-                </p>
-                <p>
-                    <br>
-                    <img src="Imagenes/Flecha.png">
-                    Reducción de costos y ausentismos
-                </p>
-                <p>
-                    <br>
-                    <img src="Imagenes/Flecha.png">
-                    Protección de la imagen y valor de la marca
-                </p>
-                <p>
-                    <br>
-                    <img src="Imagenes/Flecha.png">
-                    Maximiza la productividad de los trabajadores
-                </p>
-                <p>
-                    <br>
-                    <img src="imagenes/Flecha.png">
-                    Y mucho mas...
-                </p>
-            </section>
-        </div>
-            
-        <div class="uso">
-            <header>
-                <center>
-                <h1>¿Qué es un SG-SST?</h1>
-                <br>
-                </center>
-            </header>
-            <section>
-            </section>
-            
-            <nav class="significado">
-                <br>
-                <p>
-                    Un sistema de seguridad y salud en el trabajo
-                    (SG-SST) es una serie de documentos legales,
-                    estándares y capacitaciones que pueden llegar
-                    a ser desde lo más básico hasta estrategias
-                    innovadoras para prevenir accidentes,
-                    enfermedades laborales, reducir riesgos,
-                    controlar los peligros y tener preparación ante 
-                    las amenazas de diferente índole (naturales,
-                    tecnológicas ....) 
-                </p>
-            </nav>
-            <section class="imagen">
-                <p>
-                    <img src="Imagenes/mujer-duda-vicente-velasco-.png" alt="">
-                </p>
-            </section>
-        </div>
-        <div class="utilidad">
-            <header>
-                <center>
-                <h1>¿Para que tener un SG-SST?</h1>
-                <br>
-                </center>
-            </header>
-            <section>
+                    <p>
+                        Un sistema de seguridad y salud en el trabajo
+                        (SG-SST) es una serie de documentos legales,
+                        estándares y capacitaciones que pueden llegar
+                        a ser desde lo más básico hasta estrategias
+                        innovadoras para prevenir accidentes,
+                        enfermedades laborales, reducir riesgos,
+                        controlar los peligros y tener preparación ante 
+                        las amenazas de diferente índole (naturales,
+                        tecnológicas ....) 
+                    </p>
+                <section class="imagen">
+                    <p>
+                        <img src="Imagenes/mujer-duda-vicente-velasco-.png" alt="">
+                    </p>
+                </section>
+            </div>
 
-            </section>
-            
-            <nav class="descripcion">
-                <p> 
+            <div class="utilidad">
+                <header>
+                    <center>
+                    <h1>¿Para que tener un SG-SST?</h1>
                     <br>
-                    <img src="Imagenes/Flecha.png">
-                    Prevenir y controlar la accidentalidad y
-                    la enfermedad laboral
-                </p>
-                <p> 
+                    </center>
+                </header>
+                <div class="descripcion">
+                <ul>
+                    <li> 
+                        <br>
+                        <img src="Imagenes/Flecha.png">
+                        Prevenir y controlar la accidentalidad y
+                        la enfermedad laboral
+                    </li>
+                    <li> 
+                        <br>
+                        <img src="Imagenes/Flecha.png">
+                        Promover la continuidad del negocio
+                    </li>
+                    <li> 
+                        <br>
+                        <img src="Imagenes/Flecha.png">
+                        Cumplir con normatividad legal Colombiana
+                        o estándares internacionales
+                    </li>
+                    <li> 
+                        <br>
+                        <img src="Imagenes/Flecha.png">
+                        Aumentar su productividad
+                    </li>
+                    <li> 
+                        <br>
+                        <img src="Imagenes/Flecha.png">
+                        Organizar su compañía
+                    </li>
+                    <li> 
+                        <br>
+                        <img src="Imagenes/Flecha.png">
+                        Reducir pérdidas monetarias
+                    </li>
+                    <li> 
+                        <br>
+                        <img src="Imagenes/Flecha.png">
+                        Participar en licitaciones o incluirse como proveedor
+                    </li>
+                </ul>
+            </div>
+                <section class="imagen1">
+                        <img src="Imagenes/wuju.png" alt="">
+                </section>
+                    
+            </div>
+            <div class="significado">
+                <header>
+                    <center>
+                    <h1>¿Que pasa si no tengo SG-SST?</h1>
                     <br>
-                    <img src="Imagenes/Flecha.png">
-                    Promover la continuidad del negocio
-                </p>
-                <p> 
-                    <br>
-                    <img src="Imagenes/Flecha.png">
-                    Cumplir con normatividad legal Colombiana
-                    o estándares internacionales
-                </p>
-                <p> 
-                    <br>
-                    <img src="Imagenes/Flecha.png">
-                    Aumentar su productividad
-                </p>
-                <p> 
-                    <br>
-                    <img src="Imagenes/Flecha.png">
-                    Organizar su compañía
-                </p>
-                <p> 
-                    <br>
-                    <img src="Imagenes/Flecha.png">
-                    Reducir pérdidas monetarias
-                </p>
-                <p> 
-                    <br>
-                    <img src="Imagenes/Flecha.png">
-                    Participar en licitaciones o incluirse como proveedor
-                </p>
-            </nav>
-            <section class="imagen">
-                <p>
-                    <img src="Imagenes/wuju.png" alt="">
-                </p>
-            </section>
+                    </center>
+                </header>
+                <div class="demas">
+                    <ul>
+                    <li> 
+                        <br>
+                        <img src="Imagenes/Flecha.png">
+                        Puede no obtener un contrato con la empresa que desea
+                    </li>
+                    <li> 
+                        <br>
+                        <img src="Imagenes/Flecha.png">
+                        Puede ser sancionado
+                    </li>
+                    <li> 
+                        <br>
+                        <img src="Imagenes/Flecha.png">
+                        Me pueden cerrar el establecimiento
+                    </li>
+                    <li> 
+                        <br>
+                        <img src="Imagenes/Flecha.png">
+                        Los trabajadores me pueden demandar
+                    </li>
+                    <li> 
+                        <br>
+                        <img src="Imagenes/Flecha.png">
+                        Puedo tener trabajadores muertos
+                    </li>
+                    <li> 
+                        <br>
+                        <img src="Imagenes/Flecha.png">
+                        Mis trabajadores se pueden accidentar o enfermar gravemente
+                    </li>
+                    <li> 
+                        <br>
+                        <img src="Imagenes/Flecha.png">
+                        Mi negocio puede acabar
+                    </li>
+                </ul>
+                </div>
+                <section class="imagen2">
+                        <img src="Imagenes/mujer-expresion-asombro_274619-205.png" alt="">
+                </section>
         </div>
-        <div class="utilidad">
-            <header>
-                <center>
-                <h1>¿Para que tener un SG-SST?</h1>
-                <br>
-                </center>
-            </header>
-            <section>
-
-            </section>
-            
-            <nav class="descripcion">
-                <p> 
-                    <br>
-                    <img src="Imagenes/Flecha.png">
-                    Puede no obtener un contrato con la empresa que desea
-                </p>
-                <p> 
-                    <br>
-                    <img src="Imagenes/Flecha.png">
-                    Puede ser sancionado
-                </p>
-                <p> 
-                    <br>
-                    <img src="Imagenes/Flecha.png">
-                    Me pueden cerrar el establecimiento
-                </p>
-                <p> 
-                    <br>
-                    <img src="Imagenes/Flecha.png">
-                    Los trabajadores me pueden demandar
-                </p>
-                <p> 
-                    <br>
-                    <img src="Imagenes/Flecha.png">
-                    Puedo tener trabajadores muertos
-                </p>
-                <p> 
-                    <br>
-                    <img src="Imagenes/Flecha.png">
-                    Mis trabajadores se pueden accidentar o enfermar gravemente
-                </p>
-                <p> 
-                    <br>
-                    <img src="Imagenes/Flecha.png">
-                    Mi negocio puede acabar
-                </p>
-            </nav>
-            <section class="imagen">
-                <p>
-                    <img src="Imagenes/mujer-expresion-asombro_274619-205.png" alt="">
-                </p>
-            </section>
-    </div>
+        
     
-    <!--Se crea el footer que ir en cada una de las pestañas de la pagina-->
-    <footer class="footer">
-        <div class="container-footer-all">
-            <div class="container-body">
-            <!--Se crea la primera columna donde irá información adicional de la empresa-->
-                <div class="colum1">
-                <h2>
-                    Más información de la compañia
-                </h2>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>
-                    Aperiam iusto quae illo aspernatur eum reprehenderit adipisci<br>
-                    eius sequi porro quidem molestias vel maiores sapiente, odit nesciunt<br>
-                    fuga sit eligendi accusantium!
-                </p>
-                </div>
+    
 
-            <!--Aquí se agrega la información de las redes sociales que maneja la empresa-->
-                <div class="colum2">
-                <h2>
-                    Redes Sociales
-                </h2>
-                <div class="fila">
-                    <a target="_blank" href="https://www.facebook.com/lmlsolution/?ref=page_internal">
-                        <img src="Imagenes/Logo Facebook.png"/>
-                    </a>
-                    <label for="">
-                        Siguenos en Facebook
-                    </label>
-                </div>
-                <div class="fila1">
-                    <a target="_blank" href="mailto:lmlsolutions01@gmail.com">
-                        <img src="Imagenes/Logo Gmail.png" width="35" height="25"/>
-                    </a>
-                    <label>
-                        Mandanos un correo
-                    </label>
-                </div>
-                </div>
+        
+<!--Se crea el footer que ir en cada una de las pestañas de la pagina-->
+<footer class="footer">
+    <div class="container-footer-all">
+        <div class="container-body">
+        <!--Se crea la primera columna donde irá información adicional de la empresa-->
+            <div class="colum1">
+            <h2>
+                Más información de la compañia
+            </h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>
+                Aperiam iusto quae illo aspernatur eum reprehenderit adipisci<br>
+                eius sequi porro quidem molestias vel maiores sapiente, odit nesciunt<br>
+                fuga sit eligendi accusantium!
+            </p>
+            </div>
 
-            <!--Aquí se agrega la información extra de contacto de la empresa-->
-                <div class="colum3">
-                <h2>
-                    Información de contacto
-                </h2>
-                <div class="fila2">
-                    <img src="Imagenes/casa.png">
-                    <label>
-                        Funza Cundinamarca, Mirador de Celta, Calle 7 #7-39
-                    </label>
-                </div>
-                <div class="fila21">
-                    <img src="Imagenes/celular.png">
-                    <label>
-                        +57 316 6182982
-                    </label>
-                </div>
-                <div class="fila22">
-                    <img src="Imagenes/correo.png">
-                    <label>
-                        lmlsolutions01@gmail.com
-                    </label>
-                </div>
-                </div>
+        <!--Aquí se agrega la información de las redes sociales que maneja la empresa-->
+            <div class="colum2">
+            <h2>
+                Redes Sociales
+            </h2>
+            <div class="fila">
+                <a target="_blank" href="https://www.facebook.com/lmlsolution/?ref=page_internal">
+                    <img src="Imagenes/Logo Facebook.png"/>
+                </a>
+                <label for="">
+                    Siguenos en Facebook
+                </label>
+            </div>
+            <div class="fila1">
+                <a target="_blank" href="mailto:lmlsolutions01@gmail.com">
+                    <img src="Imagenes/Logo Gmail.png" width="35" height="25"/>
+                </a>
+                <label>
+                    Mandanos un correo
+                </label>
+            </div>
+            </div>
+
+        <!--Aquí se agrega la información extra de contacto de la empresa-->
+            <div class="colum3">
+            <h2>
+                Información de contacto
+            </h2>
+            <div class="fila2">
+                <img src="Imagenes/casa.png">
+                <label>
+                    Funza Cundinamarca, Mirador de Celta, Calle 7 #7-39
+                </label>
+            </div>
+            <div class="fila21">
+                <img src="Imagenes/celular.png">
+                <label>
+                    +57 316 6182982
+                </label>
+            </div>
+            <div class="fila22">
+                <img src="Imagenes/correo.png">
+                <label>
+                    lmlsolutions01@gmail.com
+                </label>
+            </div>
             </div>
         </div>
+    </div>
 
-        <div class="container-footer">
-            <div class="copyright">
-                Políticas de privacidad | ©2021 Copyright | Todos los derechos reservados<br>
-                Desarrollado por Cristhian y Tomas
-            </div>
-            <div class="information">
-                <a href="Inicio.html">
-                    Inicio | 
-                </a>
-                <a href="Cotizacion.html">
-                    Cotización | 
-                </a>
-                <a href="Servicios.html">
-                    Nuestros servicios | 
-                </a>
-                <a href="Extensiones.html">
-                    Extensiones | 
-                </a>
-                <a href="Contactanos.html">
-                    Contactanos
-                </a>
-            </div>
+    <div class="container-footer">
+        <div class="copyright">
+            Políticas de privacidad | ©2021 Copyright | Todos los derechos reservados<br>
+            Desarrollado por Cristhian y Tomas
         </div>
-    </footer>
+        <div class="information">
+            <a href="Inicio.html">
+                Inicio | 
+            </a>
+            <a href="Cotizacion.html">
+                Cotización | 
+            </a>
+            <a href="Servicios.html">
+                Nuestros servicios | 
+            </a>
+            <a href="Extensiones.html">
+                Extensiones | 
+            </a>
+            <a href="Contactanos.html">
+                Contactanos
+            </a>
+        </div>
+    </div>
+</footer>
+<script src="Servicios.js"></script>
 </body>
 </html>
