@@ -102,6 +102,10 @@ function riesgos(){
 
 
 function generateCotizacion() {
+
+    var form = document.getElementById("formulario_cotizacion");
+    function handleForm(event) { event.preventDefault(); } 
+    form.addEventListener('submit', handleForm);
     let trabajadores2, mcuadra2, riesg, ubicacion2, sedes2
     //obtiene valores del form segun su ID
     
