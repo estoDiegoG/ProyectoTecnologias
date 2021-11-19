@@ -35,7 +35,7 @@
         </div>
 
         <!--<form action="mailto: lmlsolutions01@gmail.com" method="POST" onsubmit="generateCotizacion()">-->
-            <form action =" " id="formulario_cotizacion" onsubmit="generateCotizacion()">
+            <form action ="CotizacionInsertar.php" method="post" id="formulario_cotizacion" onsubmit="generateCotizacion()">
                 <div class="infor">
                     <div class="infor1">
                         <img src="Imagenes/Flecha.png">
@@ -116,10 +116,11 @@
                         </label>
                     </div><br>
                     <input type="number" name="sedes" min="0" placeholder="Ej: 5"><br><br>
+                    <input type="hidden" value="0" name="ingreso">
                 </div><br><br>
 
             <div class="boton">
-                <button class="boton1" type="submit" value="Submit" onclick="generateCotizacion()">
+                <button class="boton1" id="buton1" type="submit" value="Submit" onclick="generateCotizacion()">
                     
                          Generar
                     
