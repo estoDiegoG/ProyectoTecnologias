@@ -75,7 +75,7 @@ nav ul li a{
     text-transform: uppercase;
     list-style: none;
     text-decoration: none;
-}
+}|
 
 li a.active, li a:hover{
     background: rgba(0, 0, 0, .3);
@@ -205,6 +205,7 @@ li a.active, li a:hover{
       grid-area: conoce;
       grid-column: 1 / 3;
       grid-row: 3;
+      padding: 15px;
       color: white;
       border-radius: 10px;
       background: #67a219;
@@ -212,14 +213,14 @@ li a.active, li a:hover{
                 inset -14px -14px 28px #7ec61f;
       margin-left: 85%;  
       height: 50px;
-      margin-top: 40px;
   }
 
 .conoce font a{
-    font-size: 15px;
+    font-size: 10px;
     text-decoration: none;
     color: white;
     text-align: center;
+    margin-top: 10px;
 }
 
 .container-inicio{
@@ -230,8 +231,7 @@ li a.active, li a:hover{
     max-width: auto;
     margin: 0;
     grid-gap: 10%;
-    grid-template-areas:  "header header "
-                         ;
+    grid-template-areas:  "header header ";
     
     grid-template-columns: 45% 45%;
     grid-template-rows:  300px 500px;
@@ -429,7 +429,7 @@ li a.active, li a:hover{
     font-size: 20px;
     grid-area: descripcion;
 }
-.descripcion ul{
+.descripcion li{
     list-style: none;
 }
 .descripcion img{
@@ -492,7 +492,6 @@ li a.active, li a:hover{
     width: 70%;
     margin-top: 20px;
 }
-
 
 
 /*Aquí inicia todo el footer de la pagina web*/
@@ -705,6 +704,7 @@ footer h2{
 
 /*Para Portatiles*/
 @media screen and (max-width: 1024px){
+    
     nav ul li a{
         font-size: 13px;
     }
@@ -829,18 +829,504 @@ footer h2{
 
 /*Para tablets*/
 @media screen and (max-width: 768px){
+    
+    .container{
+        max-width: 100%;
+        display: grid;
+        max-width: auto;
+        grid-gap: 0px;
+        grid-template-areas: "menu menu menu"
+                            "flexslider flexslider flexslider"
+                            "conoce conoce conoce"
+                            "container-inicio container-inicio container-inicio"
+                            "obj obj obj"
+                            "lml lml lml"
+                            "logros logros logros"
+                            "uso uso uso"
+                            "utilidad utilidad utilidad"
+                            "significado significado significado"
+                            "footer footer footer"
+                            "container-footer container-footer container-footer";
+        grid-template-columns: 7.8425% 46.09375% 46.09375%;
+        grid-template-rows: 58px 550px 150px 400px 400px 500px 600px 700px 700px 700px auto 0px;
+    }
+    body{
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    
+    nav{
+        grid-area: menu;
+        grid-column: 1 / 4;
+        grid-row: 1;
+        height: 80px;
+        width: 100%;
+        border-radius: 0px;
+        background: #67a219;
+        box-shadow: inset 14px 14px 28px #507e14,
+                    inset -14px -14px 28px #7ec61f;
+    }
+    
+    .logo{
+        height: 80px;
+        background: white;
+        padding: 0 20px 0 20px;
+    }
+    
+    nav ul{
+        float: right;
+        margin-right: 20px;
+    }
+    
+    nav ul li{
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+        
+    }
+    
+    nav ul li a{
+        color: white;
+        font-size: 18px;
+        padding: 7px 13px;
+        border-radius: 3px;
+        text-transform: uppercase;
+        list-style: none;
+        text-decoration: none;
+    }|
+    
+    li a.active, li a:hover{
+        background: rgba(0, 0, 0, .3);
+        transition: .5s;
+    }
+    
+    .checkbtn{
+        font-size: 35px;
+        color: white;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+    
+    #check{
+        display: none;
+    }
+    .flexslider{
+        grid-column: 1/4;
+        grid-area: flexslider;
+        margin-top: 30px;
+        width:100%;
+        position: relative;
+    }
+    .slides{
+        width:100%;
+        overflow: hidden;
+    }
+    .slides img{
+        width: 100%;
+        height: 500px;
+    }
+    .slides,.flex-control-nav,.flex-direction-nav{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .flex-control-nav{
+        width: 100%;
+        text-align: center;
+    }
+    .flex-control-nav>li{
+        display: inline-block;
+        margin: 0 6px;
+    }
+    .flex-control-nav>li>a{
+        display: block;
+        background-color: #5B98A6;
+        width: 12px;
+        height: 12px;
+        border-radius: 12px;
+        text-indent: -9999px;
+    }
+    .flex-control-nav>li>a:hover{
+        background-color: #0B8C8C;
+    }
+    .flex-control-nav>li>a.flex-active{
+        background-color: #0B8C8C;
+    }
+    .flex-direction-nav a{
+        display: block;
+        text-decoration: none;
+        position: absolute;
+        top: 50%;
+        z-index: 999;
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+    }
+    .flex-direction-nav .flex-prev{
+        left: 0;
+    }
+    .flex-direction-nav .flex-next{
+        right: 0;
+    }
+    .flex-direction-nav a:before {
+        font-family: "flexslider-icon";
+        font-size: 40px;
+        display: inline-block;
+        content: '\f001';
+        color: #fff;
+        text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+      }
+      .flex-direction-nav a.flex-next:before {
+        content: '\f002';
+      }
+      
+      .flex-caption p{
+          font-family: Lato;
+          position: absolute;
+          top: 50%;
+          text-align: center;
+          width: 100%;
+          font-size: 45px;
+          color: #fff;
+          font-weight: bold;
+      }
+      
+      .flexslider:hover .flex-direction-nav .flex-prev{
+          opacity: 0.7;
+          left: 10px;
+      }
+      
+      .flexslider:hover .flex-direction-nav .flex-prev:hover{
+          opacity: 1;
+      }
+      
+      .flexslider:hover .flex-direction-nav .flex-next{
+          opacity: 0.7;
+          right: 10px;
+      }
+      
+      .flexslider:hover .flex-direction-nav .flex-next:hover{
+          opacity: 1;
+      }
+    
+      
+      .conoce{
+          grid-area: conoce;
+          grid-column: 1 / 3;
+          grid-row: 3;
+          padding: 15px;
+          color: white;
+          border-radius: 10px;
+          background: #67a219;
+          box-shadow: inset 14px 14px 28px #507e14,
+                    inset -14px -14px 28px #7ec61f;
+          margin-left: 85%;  
+          height: 50px;
+      }
+    
+    .conoce font a{
+        font-size: 10px;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .container-inicio{
+        grid-area: container-inicio;
+        grid-column: 1 / 4;
+        grid-row: 4;
+        display: grid;
+        max-width: auto;
+        margin: 0;
+        grid-gap: 10%;
+        grid-template-areas:  "header header ";
+        
+        grid-template-columns: 45% 45%;
+        grid-template-rows:  300px 500px;
+      }
+      .quien{
+        width:90%;
+        height:500px;
+        margin-bottom: 200px;
+        margin-left: 25px;
+      }
+    
+    .quien h1{
+        font-size: 30px;
+        color: #5B98A6;
+        text-decoration: bold;
+        margin-top: 60px;
+        text-align: center;
+    }
+    
+    .quien p{ 
+        margin-left: 30px;
+        text-align:center;
+        font-size:  20px;
+    }
+    .obj{
+        grid-area: obj;
+        grid-column: 1 / 4;
+        grid-row: 5;
+        display: grid;
+        max-width: auto;
+        margin: 0;
+        grid-gap: 0px;
+        grid-template-areas:  "mision vision";
+        grid-template-columns: 50% 50%;
+        grid-template-rows:  300px 300px;
+    }
+    .mision{
+        grid-area: mision;
+        width: 90%;
+        text-align: center;
+    }
+    .mision h2{
+          font-size: 30px;
+        color: #5B98A6;
+        text-align: center;
+      }
+    .mision p{
+        font-size: 20px;
+        width: 90%;
+        text-align: center;
+        margin-left: 35px;
+    }
+    .vision{
+        grid-area: vision;
+        width: 90%;
+        text-align: center;
+        margin-left: 35px;
+    }
+    .vision h2{
+        font-size: 30px;
+        color: #5B98A6;
+        text-decoration: bold;
+        text-align: center;
+      }
+    .vision p{
+        text-align: center;
+        font-size: 20px;
+      }
+    .empresa{
+        margin-top: 100px;
+        grid-area: obj;
+        grid-column: 1 / 4;
+        grid-row: 6;
+        display: grid;
+        max-width: auto;
+        margin: 0;
+        grid-gap: 0px;
+        grid-template-areas:  "lml";
+        grid-template-columns: 100%;
+        grid-template-rows:  300px 300px;
+    }
+    .lml{
+        margin-top: 30px;
+        width: 100%;
+        height: 450px;
+        text-align: center;
+      }
+      .lml h2{
+        color: #6fa61c;
+        text-align: center;
+        font-size:50px;
+      }
+      .lml h2{
+        text-align: center;
+      }
+      .lml p{
+          width: 90%;
+          font-size: 20px;
+          text-align: center
+      }
+      .logros{
+        grid-area: logros;
+        grid-column: 1 / 4;
+        grid-row: 7;
+        display: grid;
+        max-width: auto;
+        margin: 0;
+        grid-gap: 0px;
+        grid-template-areas:  "propiedades beneficios";
+        grid-template-columns: 50% 50%;
+        grid-template-rows:  400px 400px;
+    }
+    .propiedades h1{
+        color:#6fa61c;
+        margin-left: 30px;
+        font-size: 30px;
+    }
+    
+    .propiedades img{
+        margin-right: 5px;
+        margin-left: 40px;
+        width: 25px;
+        height: 25px;
+        
+    }
+    .propiedades li{
+        list-style: none;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    .beneficios h1{
+        grid-area: header;
+        color:#6fa61c;
+        margin-left: 30px;
+        font-size: 30px;
+    }
+    .beneficios li{
+        list-style: none;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    .beneficios img{
+        margin-right: 5px;
+        margin-left: 40px;
+        width: 25px;
+        height: 25px;
+    }
+    
+    .uso{
+        grid-area: logros;
+        grid-column: 1 / 4;
+        grid-row: 8;
+        display: grid;
+        max-width: auto;
+        margin: 0;
+        grid-gap: 10%;
+        grid-template-areas:  "header "
+                              "significado imagen";
+        grid-template-columns: 55% 35%;
+        grid-template-rows:  30px 400px ;
+    }
+    .uso h1{
+        grid-area: header;
+        font-size: 40px; 
+        text-align: center; 
+        color:#6fa61c;
+    }
+    .uso p{
+        font-size: 30px;
+        text-align: center;
+    }
+    .uso img{
+        height: 300px;
+        width: 70%;
+        margin-bottom: 20px;
+    }
+    .utilidad{
+        grid-area: utilidad;
+        grid-column: 1 / 4;
+        grid-row: 9;
+        display: grid;
+        max-width: auto;
+        margin: 0;
+        grid-gap: 10%;
+        grid-template-areas:  "header header"
+                              "descripcion imagen1";
+        grid-template-columns: 55% 35%;
+        grid-template-rows:  30px 400px ;
+    }
+    .utilidad h1{
+        grid-area: header;
+        grid-column: 1 / 2;
+        font-size: 40px; 
+        text-align: center; 
+        color:#6fa61c;
+        
+    }
+    .descripcion{
+        margin-left: 40px;
+        font-size: 20px;
+        grid-area: descripcion;
+    }
+    .descripcion ul{
+        list-style: none;
+    }
+    .descripcion img{
+        width: 25px;
+        height: 25px;
+    }
+    .imagen1{
+        grid-area: imagen1;
+    }
+    .imagen1 img{
+        margin-top: 10px;
+        height: 400px;
+        width: 70%;
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+    .significado{
+        grid-area: significado;
+        grid-column: 1 / 4;
+        grid-row: 10;
+        display: grid;
+        max-width: auto;
+        margin: 0;
+        grid-gap: 10%;
+        grid-template-areas:  "header header"
+                              "demas imagen2";
+        grid-template-columns: 55% 35%;
+        grid-template-rows:  30px 400px ;
+    }
+    
+    .significado{
+        list-style: none;
+        margin-left: 40px;
+        font-size: 40px;
+    }
+    .significado h1{
+        grid-area: header;
+        grid-column: 1 / 2;
+        font-size: 40px; 
+        text-align: center; 
+        color:#6fa61c;
+        
+    }
+    .demas{
+        font-size: 20px;
+        grid-area: demas;
+    }
+    .demas ul{
+        list-style: none;
+    }
+    .demas img{
+        width: 25px;
+        height: 25px;
+    }
+    .imagen2{
+        grid-area: imagen2;
+    }
+    .imagen2 img{    
+        height: 300px;
+        width: 70%;
+        margin-top: 20px;
+    }   
     .checkbtn{
         line-height: 60px;
         margin-right: 30px;
         display: block;
     }
+    /*Importante*/
     ul{
-        position: fixed;
+        /* position: fixed; */
         width: 100%;
         height: 100vh;
-        background: #4c4c4c;
+        /* background: #4c4c4c;
         top: 60px;
-        left: -100%;
+        left: -100%; */
         text-align: center;
         transition: all .5s;
     }
@@ -998,111 +1484,325 @@ footer h2{
 
 /*Para celulares*/
 @media screen and (max-width: 480px){
-    .flexslider{
-        grid-column: 1/4;
-        grid-area: flexslider;
-        margin-top: 30px;
-        width:100%;
-        position: relative;
+    
+    .container{
+        max-width: 100%;
+        display: grid;
+        max-width: auto;
+        grid-gap: 0px;
+        grid-template-areas: "menu menu menu"
+                            "flexslider flexslider flexslider"
+                            "conoce conoce conoce"
+                            "container-inicio container-inicio container-inicio"
+                            "obj obj obj"
+                            "lml lml lml"
+                            "logros logros logros"
+                            "uso uso uso"
+                            "utilidad utilidad utilidad"
+                            "significado significado significado"
+                            "footer footer footer"
+                            "container-footer container-footer container-footer";
+        grid-template-columns: 7.8425% 46.09375% 46.09375%;
+        grid-template-rows: 58px 550px 100px 650px 600px 450px 900px 600px 800px 800px auto 0px;
     }
-    .slides{
-        width:100%;
-        overflow: hidden;
-    }
-    .slides img{
-        width: 100%;
-        height: 200px;
-    }
-    .slides,.flex-control-nav,.flex-direction-nav{
+    .container-inicio{
+        grid-area: container-inicio;
+        grid-column: 1 / 4;
+        grid-row: 4;
+        display: grid;
+        max-width: auto;
         margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-    .flex-control-nav{
-        width: 100%;
-        text-align: center;
-    }
-    .flex-control-nav>li{
-        display: inline-block;
-        margin: 0 6px;
-    }
-    .flex-control-nav>li>a{
-        display: block;
-        background-color: #5B98A6;
-        width: 12px;
-        height: 12px;
-        border-radius: 12px;
-        text-indent: -9999px;
-    }
-    .flex-control-nav>li>a:hover{
-        background-color: #0B8C8C;
-    }
-    .flex-control-nav>li>a.flex-active{
-        background-color: #0B8C8C;
-    }
-    .flex-direction-nav a{
-        display: block;
-        text-decoration: none;
-        position: absolute;
-        top: 50%;
-        z-index: 999;
-        width: 40px;
-        height: 40px;
-        overflow: hidden;
-        opacity: 0;
-        -webkit-transition: all 0.3s ease-in-out;
-      -moz-transition: all 0.3s ease-in-out;
-      -ms-transition: all 0.3s ease-in-out;
-      -o-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out;
-    }
-    .flex-direction-nav .flex-prev{
-        left: 0;
-    }
-    .flex-direction-nav .flex-next{
-        right: 0;
-    }
-    .flex-direction-nav a:before {
-        font-family: "flexslider-icon";
-        font-size: 40px;
-        display: inline-block;
-        content: '\f001';
-        color: #fff;
-        text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+        grid-gap: 0%;
+        grid-template-areas:  "quien"
+                              "video ";
+        
+        grid-template-columns: 100%;
+        grid-template-rows:  300px ;
       }
-      .flex-direction-nav a.flex-next:before {
-        content: '\f002';
-      }
-      
-      .flex-caption p{
-          font-family: Lato;
-          position: absolute;
-          top: 50%;
-          text-align: center;
-          width: 100%;
-          font-size: 45px;
-          color: #fff;
-          font-weight: bold;
-      }
-      
-      .flexslider:hover .flex-direction-nav .flex-prev{
-          opacity: 0.7;
-          left: 10px;
-      }
-      
-      .flexslider:hover .flex-direction-nav .flex-prev:hover{
-          opacity: 1;
-      }
-      
-      .flexslider:hover .flex-direction-nav .flex-next{
-          opacity: 0.7;
-          right: 10px;
-      }
-      
-      .flexslider:hover .flex-direction-nav .flex-next:hover{
-          opacity: 1;
+      .quien{
+        width:90%;
+        height: 200px;
+        margin-right: 60px;
       }
     
+    .quien h1{
+        font-size: 25px;
+        color: #5B98A6;
+        text-decoration: bold;
+        text-align: center;
+    }
+    
+    .quien p{ 
+        text-align: center;
+        font-size:  20px;
+    }
+    .video{
+        width: 90%; 
+        height:200px;
+        margin-left: 60px;
+    }
+    .obj{
+        grid-area: obj;
+        grid-column: 1 / 4;
+        grid-row: 5;
+        display: grid;
+        max-width: auto;
+        margin: 0;
+        grid-gap: 0px;
+        grid-template-areas:  "mision"
+                              "vision";
+        grid-template-columns: 100%;
+        grid-template-rows:  300px ;
+    }
+    .mision{
+        grid-area: mision;
+        width: 90%;
+        text-align: center;
+        margin-left: 30px;
+    }
+    .mision h2{
+        font-size: 25px;
+        color: #5B98A6;
+        text-align: center;
+        margin-left: 30px;
+      }
+    .mision p{
+        font-size: 20px;
+        width: 90%;
+        text-align: center;
+        margin-left: 30px;
+    }
+    .vision{
+        grid-area: vision;
+        width: 90%;
+        text-align: center;
+        margin-left: 30px;
+    }
+    .vision h2{
+        font-size: 25px;
+        color: #5B98A6;
+        text-decoration: bold;
+        text-align: center;
+      }
+    .vision p{
+        text-align: center;
+        font-size: 20px;
+      }
+    .empresa{
+        margin-top: 100px;
+        grid-area: obj;
+        grid-column: 1 / 4;
+        grid-row: 6;
+        display: grid;
+        max-width: auto;
+        margin: 0;
+        grid-gap: 0px;
+        grid-template-areas:  "lml";
+        grid-template-columns: 100%;
+        grid-template-rows:  300px 300px;
+    }
+    .lml{
+
+        width: 100%;
+        height: 450px;
+        text-align: center;
+      }
+      .lml h2{
+        color: #6fa61c;
+        text-align: center;
+        font-size:30px;
+      }
+      .lml h2{
+        text-align: center;
+      }
+      .lml h3{
+          margin-left: 20px;
+      }
+      .lml h3 img{
+        width: 75%;
+        height: 150px;
+      }
+      .lml p{
+          width: 90%;
+          font-size: 15px;
+          text-align: center
+      }
+      .logros{
+        grid-area: logros;
+        grid-column: 1 / 4;
+        grid-row: 7;
+        display: grid;
+        max-width: auto;
+        margin: 0;
+        grid-gap: 0px;
+        grid-template-areas:  "propiedades" 
+                              "beneficios";
+        grid-template-columns: 100%;
+        grid-template-rows: 400px;
+    }
+    .propiedades{
+        grid-area: propiedades;
+    }
+    .propiedades h1{
+        color:#6fa61c;
+        margin-left: 30px;
+        font-size: 25px;
+    }
+    .propiedades img{
+        margin-right: 5px;
+        margin-left: 40px;
+        width: 25px;
+        height: 25px;
+        
+    }
+    .propiedades li{
+        text-align: justify;
+        list-style: none;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    .beneficios{
+        grid-area: beneficios;
+        
+    }
+    .beneficios h1{
+        color:#6fa61c;
+        margin-left: 30px;
+        font-size: 25px;
+    }
+    .beneficios li{
+        text-align: justify;
+        list-style: none;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    .beneficios img{
+        margin-right: 5px;
+        margin-left: 40px;
+        width: 25px;
+        height: 25px;
+    }
+    
+    .uso{
+        margin-bottom: 10px;
+        grid-area: logros;
+        grid-column: 1 / 4;
+        grid-row: 8;
+        display: grid;
+        max-width: auto;
+        margin: 0;
+        grid-gap: 0%;
+        grid-template-areas:  "uso"
+                              "imagen";
+        grid-template-columns: 100%;
+        grid-template-rows:  0px ;
+    }
+    .uso h1{
+        grid-area: header;
+        font-size: 25px; 
+        text-align: center; 
+        color:#6fa61c;
+    }
+    .uso p{
+        font-size: 20px;
+        text-align: center;
+    }
+    .imagen img{
+        height: 200px;
+        width: 60%;
+        margin-bottom: 20px;
+    }
+    .utilidad{
+        grid-area: utilidad;
+        grid-column: 1 / 4;
+        grid-row: 9;
+        display: grid;
+        max-width: auto;
+        margin: 0;
+        grid-gap: 0%;
+        grid-template-areas:  "para"
+                              "descripcion"
+                              "imagen1";
+        grid-template-columns: 100%;
+        grid-template-rows: 50px,250px ;  
+      }
+    .utilidad h1{
+        grid-area: para;
+        font-size: 25px; 
+        text-align: center; 
+        color:#6fa61c;
+        
+    }
+    .descripcion{
+        margin-left: 40px;
+        font-size: 20px;
+        grid-area: descripcion;
+        height: 250px;
+    }
+    .descripcion li{
+        list-style: none;
+        
+    }
+    .descripcion img{
+        width: 25px;
+        height: 25px;
+    }
+    .imagen1{
+        grid-area: imagen1;
+    }
+    .imagen1 img{
+        margin-top: 100px;
+        margin-left: 100px;
+        height: 200px;
+        width: 60%;
+    }
+    .significado{
+        grid-area: significado;
+        grid-column: 1 / 4;
+        grid-row: 10;
+        display: grid;
+        max-width: auto;
+        margin: 0;
+        grid-gap: 0%;
+        grid-template-areas:  "header"
+                              "demas" 
+                              "imagen2";
+        grid-template-columns: 100%;
+        grid-template-rows:  50px ;
+    }
+    
+    .significado{
+        list-style: none;
+        margin-left: 40px;
+        font-size: 40px;
+    }
+    .significado h1{
+        grid-area: header;
+        grid-column: 1 / 2;
+        font-size: 25px; 
+        text-align: center; 
+        color:#6fa61c;
+    }
+    .demas{
+        font-size: 20px;
+        grid-area: demas;
+    }
+    .demas li{
+        list-style: none;
+    }
+    .demas img{
+        width: 25px;
+        height: 25px;
+    }
+    .imagen2{
+        grid-area: imagen2;
+    }
+    .imagen2 img{    
+        height: 150px;
+        width: 70%;
+        margin-top: 20px;
+        margin-left: 50px;
+    }    
     .tcontactanos h1{
         font-size: 22px;
     }

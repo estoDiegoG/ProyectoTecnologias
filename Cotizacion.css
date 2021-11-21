@@ -15,7 +15,7 @@
                         "footer footer footer"
                         "container-footer container-footer container-footer";
     grid-template-columns: 7.8425% 46.09375% 46.09375%;
-    grid-template-rows: 65px 2500px auto 0px;
+    grid-template-rows: 65px 2800px auto 0px;
 }
 
 body{
@@ -112,48 +112,57 @@ li a.active, li a:hover{
 
 .resultado{
     text-align: center;
-    height: 200px;
+    height: 310px;
     width: 200px;
     margin: 25px 25px;
-    padding: 10px 10px;
-    border-radius: 50px;
+    border-radius: 25px;
+    border: 2px solid #d4d4d4;
+}
+
+.resultado h3{
     background: #67a219;
-    box-shadow: inset 14px 14px 28px #507e14,
-                inset -14px -14px 28px #7ec61f;
+    border-radius: 20px 20px 0px 0px;
+    font-size: 25px;
+    text-align: center;
+    color: white;
 }
 
 .resultado p{
-    font-size: 20px;
-    margin: 15px;
-    text-align: center;
+    padding: 15px 0px 15px 0px;
+    border: 1px solid #d4d4d4;
+    font-weight: 700;
 }
 
-.info14 input{
-    height: 30px;
-    border-radius: 5px;
+.plan{
     margin-top: 20px;
-    padding-left: 10px;
-    border: 3px solid black;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    border: 2px solid #67a219;
+    border-radius: 10px;
+    background: #7ec61f;
+}
+
+.plan:hover{
+    color: red;
+}
+
+.info14 p{
+    height: 50px;
     border-radius: 5px;
-    background: #569504;
-    box-shadow: inset 8px 8px 10px #3f6d03,
-            inset -8px -8px 10px #6dbd05;
+    margin-top: 30px;
+    border: 1px solid black;
+    background: rgb(236, 236, 236);
+}
+
+#resul1{
+
+    margin-top: none;
 }
 
 .info14 h2{
     margin-top: 15px;
-}
-
-.info13 input{
-    height: 30px;
-    border-radius: 5px;
-    margin-top: 20px;
-    padding-left: 10px;
-    border: 3px solid black;
-    border-radius: 5px;
-    background: #569504;
-    box-shadow: inset 8px 8px 10px #3f6d03,
-            inset -8px -8px 10px #6dbd05;
 }
 
 .infor{
@@ -186,7 +195,7 @@ li a.active, li a:hover{
 .infor input{
     grid-area: nav;
     margin-left: 30px;
-    border: 2px solid #5a9aae;
+    border: 2px solid #000000;
     border-radius: 6px;
     background: #f2f2f2;
     box-shadow: inset 5px 5px 10px #cecece,
@@ -227,27 +236,14 @@ li a.active, li a:hover{
     color: #67a219;
 }
 
-.corti-imput{
-    grid-area: nav;
-}
-
-.coti1 input{
-    grid-area: nav;
-    margin-left: 450px;
-    justify-content: center;
-    width: 250px;
-    height: 50px;
-    border: 2px solid #5a9aae;
-    border-radius: 6px;
-    background: #f2f2f2;
-    box-shadow: inset 5px 5px 10px #cecece,
-            inset -5px -5px 10px #ffffff;
-}
-
-.coti1 label{
-    grid-area: nav;
+.adquirir{
     text-align: center;
-    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.adquirir h2{
+    color: #67a219;
+    font-size: 40px;
 }
 
 /*Aquí inicia todo el footer de la pagina web*/
@@ -468,28 +464,12 @@ footer h2{
         font-size: 20px;
     }
 
-    .resultado{
-        height: 180px;
-        width: 180px;
-        margin: 25px 25px;
-        padding: 10px 10px;
-    }
-
-    .resultado p{
-        font-size: 18px;
-    }
-
-    .info14 input{
-        height: 25px;
-        width: 125px;
-        border-radius: 5px;
-        margin-top: 5px;
-        padding-left: 5px;
-    }
-    
-    .info14 h2{
-        margin-top: 10px;
-        font-size: 18px;
+    .resultados{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        margin-top: 50px;
     }
 
     /*primera parte del footer*/
@@ -790,8 +770,43 @@ footer h2{
     }
 
     .infor input{
-        margin-left: 15px;
         width: 350px;
+    }
+
+    .adquirir h2{
+        font-size: 25px;
+    }
+    
+    .resultado{
+        text-align: center;
+        height: 250px;
+        width: 150px;
+        margin: 25px 25px;
+        border-radius: 15px;
+        border: 2px solid #d4d4d4;
+    }
+    
+    .resultado h3{
+        border-radius: 15px 15px 0px 0px;
+        font-size: 15px;
+    }
+    
+    .resultado p{
+        padding: 10px 0px 10px 0px;
+        border: 1px solid #d4d4d4;
+        font-weight: 600;
+        font-size: 15px;
+    }
+    
+    .plan{
+        padding: 10px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    
+    .info14 p{
+        border: 1px solid black;
+        height: 30px;
     }
     
 
