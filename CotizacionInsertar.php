@@ -43,6 +43,26 @@ if ($conn->query($sql) === TRUE) {
 } else {
 }
 
+//query para crear tabla y campos
+$conn = new mysqli($host, $user, $password,$DB);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+$sql = "CREATE TABLE `calificaciones` (
+    `nombre` varchar(255) DEFAULT NULL,
+    `apellido` varchar(255) DEFAULT NULL,
+    `nickname` varchar(255) DEFAULT NULL,
+    `comentarios` varchar(255) DEFAULT NULL,
+    `cal` varchar(255) DEFAULT NULL
+  )";
+if ($conn->query($sql) === TRUE) {
+ //   echo"tabla creada";
+} else {
+  //  echo"Error creating table: ". $conn->error;
+    
+}
+
 $sql = "INSERT INTO `product` (`NumeroContacto`, `NombreEmpresa`, `NumeroTrabajadores`, MetrosCuadrados, Actividades, Riesgo, Ubicacion, Sedes, ingreso) VALUES
  ('".$numero."', '".$empresa."', '".$ntrabajadores."', '".$metrosc."', '".$activity."', '".$riesgos."', '".$ubication."', '".$nsedes."', '".$ingreso."')";
 $enlace $conn->query($sql;)
