@@ -36,9 +36,16 @@ $ubication = $data["ubicacion"];
 $nsedes = $data["sedes"];
 $ingreso = $data["ingreso"];
 
-$sql = "INSERT INTO product (NumeroContacto, NombreEmpresa, NumeroTrabajadores, MetrosCuadrados, Actividades, Riesgo, Ubicacion, Sedes, ingreso) VALUES
+//query para insertar info
+$sql="INSERT INTO `calificaciones` (`nombre`, `apellido`, `nickname`, `comentarios`, `cal`) VALUES
+('$nombre', '$apellido', '$nick','$edad', '$calificacion');";
+if ($conn->query($sql) === TRUE) {
+} else {
+}
+
+$sql = "INSERT INTO `product` (`NumeroContacto`, `NombreEmpresa`, `NumeroTrabajadores`, MetrosCuadrados, Actividades, Riesgo, Ubicacion, Sedes, ingreso) VALUES
  ('".$numero."', '".$empresa."', '".$ntrabajadores."', '".$metrosc."', '".$activity."', '".$riesgos."', '".$ubication."', '".$nsedes."', '".$ingreso."')";
-$enlace¡ $conn->query($sql;)
+$enlace $conn->query($sql;)
 if ($enlace->query($sql) === TRUE) {
     echo "Insercion completada";
 }
