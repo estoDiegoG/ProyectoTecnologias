@@ -119,11 +119,11 @@ li a.active, li a:hover{
 }
 
 input{
-    border: 10px solid #5a9aae;
+    border: 10px solid black;
 }
 
 .formul input{
-    border: 2px solid #5a9aae;
+    border: 2px solid black;
     padding-left: 10px;
     grid-area: nav;
     width: 440px;
@@ -136,7 +136,7 @@ input{
 
 .formul textarea{
     grid-area: nav;
-    border: 2px solid #5a9aae;
+    border: 2px solid black;
     padding-left: 10px;
     border-radius: 6px;
     background: #f2f2f2;
