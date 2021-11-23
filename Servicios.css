@@ -47,13 +47,12 @@ nav ul{
 nav ul li{
     display: inline-block;
     line-height: 80px;
-    margin: 0 5px;
-    
+    /* margin: 0 5px; */
 }
 
 nav ul li a{
     color: white;
-    font-size: 18px;
+    font-size: 15px;
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
@@ -624,6 +623,52 @@ footer h2{
         height: 60px;
     }
 
+    .container{
+        grid-template-rows: 58px 200px 4400px auto 0px;
+    }
+
+    /*navegación del servicio*/
+
+    .emer1 h2{
+        font-size: 23px;
+    }
+    
+    .parra{
+        font-size: 14px;
+    }
+    
+    .servicio1 img{
+        grid-area: nav;
+        margin-left: 110px;
+        margin-top: 50px;
+        width: 120px;
+    }
+    
+    .servicio1{
+        grid-area: nav;
+        margin-left: 50px;
+        margin-top: 150px;
+    }
+    
+    .infor1{
+        grid-area: nav;
+    }
+    
+    .infor1 h3{
+        margin-top: 18px;
+        font-size: 20px;
+    }
+    
+    .lista{
+        margin-top: 20px;
+        display: flex;
+    }
+    
+    .l1 li{
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
     /*primera parte del footer*/
     .colum1{
         max-width: 300px;
@@ -639,6 +684,56 @@ footer h2{
         max-width: 200px;
         margin-top: 20px;
         margin-left: 10px;
+    }
+
+    .nav2{
+        text-align: center;
+        margin-left: 100px;
+    }
+    
+    .orden{
+        grid-area: nav2;
+    }
+    
+    #png1{
+        margin-top: 625px;
+        margin-left: 25px;
+        width: 110px;
+    }
+    #png2{
+        margin-top: 280px;
+        margin-left: 25px;
+        width: 180px;
+    }
+    #png3{
+        margin-top: 280px;
+        margin-left: 25px;
+        width: 180px;
+    }
+    #png4{
+        margin-top: 200px;
+        margin-left: 25px;
+        width: 180px;
+    }
+    #png5{
+        margin-top: 200px;
+        margin-left: 25px;
+        width: 180px;
+    }
+    #png6{
+        margin-top: 420px;
+        margin-left: 0px;
+        width: 350px;
+    }
+    #png7{
+        margin-top: 300px;
+        margin-left: 25px;
+        width: 180px;
+    }
+    #png8{
+        margin-top: 300px;
+        margin-left: 15px;
+        width: 300px;
     }
 
     /*Segunda parte del footer*/
@@ -755,44 +850,55 @@ footer h2{
 @media screen and (max-width: 480px){
 
     .container{
-        grid-template-rows: 58px 200px 6200px auto 0px;
+        max-width: 100%;
+        display: grid;
+        max-width: auto;
+        grid-gap: 0px;
+        grid-template-areas: "menu menu menu menu"
+                            "titulo titulo titulo titulo"
+                            "nav nav nav nav"
+                            "nav2 nav2 nav2 nav2"
+                            "footer footer footer footer"
+                            "container-footer container-footer container-footer container-footer";
+        grid-template-columns: 25% 30% 20% 25%;
+        grid-template-rows: 58px 200px 2500 0px auto 0px;
     }
 
-    .tcontactanos h1{
-        font-size: 22px;
+    .nav2{
+        margin-left: 0px;
     }
 
-    .tcontactanos p{
-        font-size: 12px;
-    }
-
-    .formul input{
-        padding-left: 10px;
-        grid-area: nav;
-        width: 240px;
-    }
-
-    .formul textarea{
-        padding-left: 10px;
-        grid-area: nav;
-        width: 240px;
-    }
-
-    .formul2{
-        font-size: 12px;
+    .titulo h1{
+        font-size: 30px;
     }
     
-    .formul2 a{
-        font-size: 12px;
-        grid-area: nav;
-        color: blue;
-        list-style: none;
+    .titulo img{
+        width: 250px;
     }
-    
-    button{
-        grid-area: nav;
-        padding: 5px;
-        font-size: 10px;
+
+    #png1{
+        display: none;
+    }
+    #png2{
+        display: none;
+    }
+    #png3{
+        display: none;
+    }
+    #png4{
+        width: 0px;
+    }
+    #png5{
+        width: 0px;
+    }
+    #png6{
+        width: 0px;
+    }
+    #png7{
+        width: 0px;
+    }
+    #png8{
+        width: 0px;
     }
 
     /*primera parte del footer*/
