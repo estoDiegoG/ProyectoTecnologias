@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Extensiones.css" type="text/css">
+    <link rel="stylesheet" href="Trabaja.css" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>Lml Solutions</title>
 </head>
@@ -21,62 +21,82 @@
             <li><a href="index.html"><b>Inicio</b></a></li>
             <li><a href="Cotizacion.html"><b>Cotización</b></a></li>
             <li><a href="Servicios.html"><b>Nuestros Servicios</b></a></li>
-            <li><a class="active" href="Extensiones.html"><b>Extensiones</b></a></li>
+            <li><a class="active" href="Trabaja.html"><b>Trabaja con nosotros</b></a></li>
             <li><a href="Contactanos.html"><b>Contactanos</b></a></li>
         </ul>
     </nav>
 
     <div class="nav">
-        <div class="image">
+        <div class="titulos">
             <h1>
-                Conoce nuestras<br>diferentes extensiones
+                Trabaja con nosotros
             </h1>
+            <p>
+                Si deseas trabajar con nosotros<br>llena los espacios y nos pondremos<br>en contacto contigo.
+            </p>
         </div>
+        <br><br>
+        <!--Aqui se hace todo el formulario apra que el usuario lo llene-->     
+        <form method="POST" action="TrabajaEnviar.php">
+            <div class="formul">
+                <input type="text" name="nombre1" placeholder="Primer nombre*" required onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"/><br>
+                <input type="text" name="nombre2" placeholder="Segundo nombre*" required onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"/><br>
+                <input type="text" name="apellido2" placeholder="Primer apellido*" required onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"/><br>
+                <input type="text" name="apellido2" placeholder="Segundo apellido*" required onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"/><br>
+                <input id="docu1" type="text" name="tip_docu" placeholder="Tipo*" list="docu" required/>
+                <datalist id="docu">
+                    <option>CC</option>
+                    <option>CE</option>
+                    <option>TI</option>
+                </datalist>
+                <input id="docu2" type="text" name="num_docu" placeholder="Documento de identidad*" required/><br>
+                <input type="text" name="correo" placeholder="Correo electronico*" required/><br>
+                <input type="text" name="ciudad" placeholder="Ciudad de residencia*" list="ciudad" required/>
+                <datalist id="ciudad">
+                    <option>Bogotá</option>
+                    <option>Medellín</option>
+                    <option>Cali</option>
+                    <option>Barranquilla</option>
+                    <option>Cartagena de indias</option>
+                    <option>Soacha</option>
+                    <option>Cúcuta</option>
+                    <option>Soledad</option>
+                    <option>Bucaramanga</option>
+                    <option>Bello</option>
+                    <option>Otro...</option>
+                </datalist>
+                <br>
+                <input type="text" name="tel_fijo" placeholder="Teléfono fijo*" required onkeypress="return (event.charCode >= 48 && event.charCode <= 57)"/><br>
+                <input type="text" name="celular" placeholder="Celular*" required onkeypress="return (event.charCode >= 48 && event.charCode <= 57)"/><br>
+                <input type="text" name="formacion" placeholder="Formación Academica" list="forma" required/><br>
+                <datalist id="forma">
+                    <option>Bachiller</option>
+                    <option>Técnico</option>
+                    <option>Tecnólogo</option>
+                    <option>Universitario</option>
+                    <option>Especialización</option>
+                    <option>Maestría</option>
+                    <option>Doctorado</option>
+                </datalist>
+                <textarea name="comentario" rows="10" cols="60" placeholder="Escribe aquí un mensaje (Opcional)"></textarea><br>
+            </div>
 
-        <div class="images1">
-            <img src="Imagenes/logo_lml_hse.png"><br><br><br>
-            <p>
-                LML-HSE se encarga de Prevenir accidentes, enfermedades laborales, reducir riesgos,<br>
-                controlar peligros y tener preparación ante amenazas futuras haciendo uso de<br>
-                sistemas de gestión, asesorías y capacitaciones.
-            </p>
-        </div>
-        <div class="images2">
-            <img src="Imagenes/LOGO LML SOLUCIONES.png"><br><br><br>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>
-                Aperiam iusto quae illo aspernatur eum reprehenderit adipisci<br>
-                eius sequi porro quidem molestias vel maiores sapiente, odit nesciunt<br>
-                fuga sit eligendi accusantium!
-            </p>
-        </div>
-        <div class="images3">
-            <img src="Imagenes/LOGO LML COACHING SOCIAL MEDIA.png"><br><br><br>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>
-                Aperiam iusto quae illo aspernatur eum reprehenderit adipisci<br>
-                eius sequi porro quidem molestias vel maiores sapiente, odit nesciunt<br>
-                fuga sit eligendi accusantium!
-            </p>
-        </div>
-        <div class="images4">
-            <img src="Imagenes/LOGO CAPACITARTE.png"><br><br><br>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>
-                Aperiam iusto quae illo aspernatur eum reprehenderit adipisci<br>
-                eius sequi porro quidem molestias vel maiores sapiente, odit nesciunt<br>
-                fuga sit eligendi accusantium!
-            </p>
-        </div>
-        <div class="images5">
-            <img src="Imagenes/logo lml fotografia.png"><br><br><br>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>
-                Aperiam iusto quae illo aspernatur eum reprehenderit adipisci<br>
-                eius sequi porro quidem molestias vel maiores sapiente, odit nesciunt<br>
-                fuga sit eligendi accusantium!
-            </p>
-        </div>
+            <div class="documento">
+                <h2>
+                    Anexe aquí su hoja de vida
+                </h2><br>
+                <input name="hoja_vida" type="file">
+            </div>
+
+            <div class="formul2">
+                <input type="submit" name="enviar" value="Enviar">
+                <button type="reset">
+                    <font size=5 color=white>
+                        Reiniciar
+                    </font>
+                </button>
+            </div>
+        </form>
     </div>
 
     <!--Se crea el footer que ir en cada una de las pestañas de la pagina-->
@@ -161,8 +181,8 @@
                 <a href="Servicios.html">
                     Nuestros servicios | 
                 </a>
-                <a href="Extensiones.html">
-                    Extensiones | 
+                <a href="Trabaja.html">
+                    Trabaja con nosotros | 
                 </a>
                 <a href="Contactanos.html">
                     Contactanos

@@ -15,7 +15,7 @@
                         "footer footer footer"
                         "container-footer container-footer container-footer";
     grid-template-columns: 7.8425% 46.09375% 46.09375%;
-    grid-template-rows: 58px 2800px auto 0px;
+    grid-template-rows: 58px 1400px auto 0px;
 }
 
 body{
@@ -46,13 +46,12 @@ nav ul{
 nav ul li{
     display: inline-block;
     line-height: 80px;
-    margin: 0 5px;
-    
+    /* margin: 0 5px; */
 }
 
 nav ul li a{
     color: white;
-    font-size: 18px;
+    font-size: 15px;
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
@@ -93,96 +92,114 @@ li a.active, li a:hover{
     font-size: 40px;
 }
 
-.image{
+.titulos{
     grid-area: nav;
+    margin-top: 50px;
+}
+
+.titulos h1{
+    grid-area: nav;
+    color:rgb(103, 162, 25);
     text-align: center;
-    margin-top: 60px;
-    color: #67a219;
+    font-size: 40px;
 }
 
-.images1{
+.titulos p{
     grid-area: nav;
+    margin-top: 10px;
     text-align: center;
-    margin-top: 100px;
-}
-
-.images1 img{
-    grid-area: nav;
-    width: 350px;
-}
-
-.images1 p{
-    grid-area: nav;
-    color: #1b1b1b;
     font-size: 20px;
+    color: black;
 }
 
-.images2{
+.formul{
     grid-area: nav;
     text-align: center;
-    margin-top: 200px;
+    
 }
 
-.images2 img{
+.formul input{
+    border: 2px solid black;
+    padding-left: 10px;
+    margin-top: 35px;
     grid-area: nav;
-    width: 350px;
+    width: 440px;
+    height: 35px;
+    border-radius: 6px;
+    background: #f2f2f2;
+    box-shadow: inset 5px 5px 10px #cecece,
+            inset -5px -5px 10px #ffffff;
 }
 
-.images2 p{
-    grid-area: nav;
-    color: #1b1b1b;
+#docu1{
+    width: 60px;
+}
+
+#docu2{
+    width: 380px;
+}
+
+.documento{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.documento h2{
     font-size: 20px;
+    color:rgb(103, 162, 25);
 }
 
-.images3{
+.documento input{
+    margin-top: 5px;
+    border: 2px solid rgb(170, 170, 170);
+    padding: 10px;
+    background-color: none;
+}
+
+.formul textarea{
+    grid-area: nav;
+    border: 2px solid black;
+    margin-top: 35px;
+    padding-left: 10px;
+    border-radius: 6px;
+    background: #f2f2f2;
+    box-shadow: inset 5px 5px 10px #cecece,
+            inset -5px -5px 10px #ffffff;
+}
+
+.formul2{
     grid-area: nav;
     text-align: center;
-    margin-top: 200px;
 }
 
-.images3 img{
+.formul2 a{
     grid-area: nav;
-    width: 350px;
+    color: blue;
+    list-style: none;
 }
 
-.images3 p{
+.formul2 input{
+    margin-top: 25px;
     grid-area: nav;
-    color: #1b1b1b;
-    font-size: 20px;
+    font-size: 24px;
+    color: white;
+    padding: 10px;
+    border: 2px solid #67a219;
+    border-radius: 0px;
+    background: #67a219;
+    box-shadow: inset 14px 14px 28px #507e14,
+            inset -14px -14px 28px #7ec61f;
 }
 
-.images4{
+button{
+    margin-top: 25px;
     grid-area: nav;
-    text-align: center;
-    margin-top: 200px;
-}
-
-.images4 img{
-    grid-area: nav;
-    width: 350px;
-}
-
-.images4 p{
-    grid-area: nav;
-    color: #1b1b1b;
-    font-size: 20px;
-}
-
-.images5{
-    grid-area: nav;
-    text-align: center;
-    margin-top: 200px;
-}
-
-.images5 img{
-    grid-area: nav;
-    width: 350px;
-}
-
-.images5 p{
-    grid-area: nav;
-    color: #1b1b1b;
-    font-size: 20px;
+    padding: 10px;
+    border: 2px solid #67a219;
+    border-radius: 0px;
+    background: #67a219;
+    box-shadow: inset 14px 14px 28px #507e14,
+            inset -14px -14px 28px #7ec61f;
 }
 
 /*Aquí inicia todo el footer de la pagina web*/
@@ -587,47 +604,7 @@ footer h2{
     }
 
     .container{
-        grid-template-rows: 58px 2400px auto 0px;
-    }
-
-    .images1 img{
-        width: 250px;
-    }
-    
-    .images1 p{
-        font-size: 16px;
-    }
-    
-    .images2 img{
-        width: 250px;
-    }
-    
-    .images2 p{
-        font-size: 16px;
-    }
-    
-    .images3 img{
-        width: 250px;
-    }
-    
-    .images3 p{
-        font-size: 16px;
-    }
-    
-    .images4 img{
-        width: 250px;
-    }
-    
-    .images4 p{
-        font-size: 16px;
-    }
-    
-    .images5 img{
-        width: 250px;
-    }
-    
-    .images5 p{
-        font-size: 16px;
+        grid-template-rows: 58px 1400px auto 0px;
     }
 
     /*primera parte del footer*/
@@ -761,31 +738,58 @@ footer h2{
 @media screen and (max-width: 480px){
 
     .container{
-        grid-template-rows: 58px 2300px auto 0px;
+        grid-template-rows: 58px 1400px auto 0px;
     }
 
-    .image h1{
-        font-size: 25px;
+    .titulos h1{
+        font-size: 22px;
     }
 
-    .images1 img{
-        width: 200px;
+    .titulos p{
+        font-size: 12px;
+    }
+
+    .formul input{
+        padding-left: 10px;
+        grid-area: nav;
+        width: 240px;
+    }
+
+    .formul textarea{
+        padding-left: 10px;
+        grid-area: nav;
+        width: 240px;
+    }
+
+    .formul2{
+        font-size: 12px;
     }
     
-    .images2 img{
-        width: 200px;
+    .formul2 a{
+        font-size: 12px;
+        grid-area: nav;
+        color: blue;
+        list-style: none;
     }
     
-    .images3 img{
-        width: 200px;
+    button{
+        grid-area: nav;
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .formul2 input{
+        grid-area: nav;
+        padding: 5px;
+        font-size: 24px;
+    }
+
+    #docu1{
+        width: 60px;
     }
     
-    .images4 img{
-        width: 200px;
-    }
-    
-    .images5 img{
-        width: 200px;
+    #docu2{
+        width: 180px;
     }
 
     /*primera parte del footer*/
