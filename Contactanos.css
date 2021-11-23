@@ -15,7 +15,7 @@
                         "footer footer footer"
                         "container-footer container-footer container-footer";
     grid-template-columns: 7.8425% 46.09375% 46.09375%;
-    grid-template-rows: 58px 900px auto 0px;
+    grid-template-rows: 58px 1000px auto 0px;
 }
 
 body{
@@ -116,6 +116,7 @@ li a.active, li a:hover{
 .formul{
     grid-area: nav;
     text-align: center;
+    
 }
 
 input{
@@ -125,6 +126,7 @@ input{
 .formul input{
     border: 2px solid black;
     padding-left: 10px;
+    margin-top: 35px;
     grid-area: nav;
     width: 440px;
     height: 35px;
@@ -137,6 +139,7 @@ input{
 .formul textarea{
     grid-area: nav;
     border: 2px solid black;
+    margin-top: 35px;
     padding-left: 10px;
     border-radius: 6px;
     background: #f2f2f2;

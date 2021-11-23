@@ -37,10 +37,11 @@
         </div>
         <br><br>
         <!--Aqui se hace todo el formulario apra que el usuario lo llene-->     
-        <form action="mailto: lmlsolutions01@gmail.com">
+        <form method="POST" action="contactEnviar.php">
             <div class="formul">
-                <input type="text" name="nombre" placeholder="Nombres*" required onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"/><br><br><br>
-                <input type="text" name="apellido" placeholder="Apellidos*" required onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"/><br><br><br>
+                <input type="text" name="nombre" placeholder="Nombres*" required onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"/><br>
+                <input type="text" name="apellido" placeholder="Apellidos*" required onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"/><br>
+                <input type="text" name="correo" placeholder="Correo*" required/><br>
                 <input type="text" name="ciudad" placeholder="Ciudad*" list="ciudad" required/>
                 <datalist id="ciudad">
                     <option>Bogotá</option>
@@ -55,9 +56,9 @@
                     <option>Bello</option>
                     <option>Otro...</option>
                 </datalist>
-                <br><br><br>
-                <input type="text" name="telefono" placeholder="Teléfono" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)"/><br><br><br>
-                <input type="text" name="celular" placeholder="Celular*" required onkeypress="return (event.charCode >= 48 && event.charCode <= 57)"/><br><br><br>
+                <br>
+                <input type="text" name="telefono" placeholder="Teléfono*" required onkeypress="return (event.charCode >= 48 && event.charCode <= 57)"/><br>
+                <input type="text" name="celular" placeholder="Celular*" required onkeypress="return (event.charCode >= 48 && event.charCode <= 57)"/><br>
                 <textarea name="comentario" rows="10" cols="60" placeholder="Escribe aquí tu mensaje"></textarea><br><br>
             </div>
             <div class="formul2">               
